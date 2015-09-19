@@ -8,10 +8,18 @@
 {
 text-align: center;
 }
+.right
+{
+text-align: right;
+float: right;
+}
 .left
 {
 text-align: left;
+float: left;
 }
+
+/* Text colours */
 .green-text
 {
 color: #00C853;
@@ -20,9 +28,21 @@ color: #00C853;
 {
 color: #AA00FF;
 }
+.cyan-text
+{
+color: #00b8d4;
+}
+.orange-text
+{
+color: #ff6d00;
+}
+
+/* HTML elements */
 html
 {
 width: 100%;
+position: relative;
+min-height: 100%;
 }
 body
 {
@@ -30,13 +50,15 @@ margin: 40px auto;
 max-width: 800px;
 font-size: 20px;
 vertical-align: middle;
+bottom: 100px;
 }
 footer
 {
 position: absolute;
-bottom: 10;
-left: 0;
-width: 100%
+right: 10%;
+bottom: 0;
+left: 5%;
+width: 90%
 }
 hr
 {
@@ -47,24 +69,113 @@ blockquote
 {
 font-weight: bold;
 }
+ul
+{
+list-style-type: square;
+}
+
+/* Collapsible list items */
+.collapse
+{
+display: block;
+}
+.collapse + input
+{
+display: none;
+}
+.collapse + input + *
+{
+display: none;
+}
+.collapse + input:checked + *
+{
+display:block;
+}
 </style></head>
   <body bgcolor="#F44336">
     <div class="center">
+      <a name="top"></a>
       <h1 class="green-text">LAB 2</h1>
       <hr>
       <blockquote cite="http://knowyourmeme.com/memes/dank-memes" class="green-text">
-        <p>Too late to explore the earth</p>
-        <p>Too early to explore space</p>
-        <p>Just in time to explore dank memes</p>
+        <p>Born too late to explore the earth</p>
+        <p>Born too early to explore space</p>
+        <p>Born just in time to explore dank memes</p>
       </blockquote>
       <hr>
+      <a href="https://www.quora.com/What-are-all-the-different-types-of-coffee-drinks" style="text-decoration: none;">
+        <h3 class="green-text">Different types of coffee</h3>
+      </a>
+      <ul class="cyan-text">
+        <li>
+          <label class="collapse" for="_0">Affogato</label>
+          <input id="_0" type="checkbox">
+          <b>
+            <div class="orange-text">This is a term that literally means 'drowned'. It is the description of a shot of separately served espresso that is later poured over a the top of a scoop of vanilla ice cream or gelato. This beverage is usually served in a short drink glass and is a Italian desert favourite. Popular Affogatos include Vanilla Affogato, Mocha Affogato, and Peppermint Affogato.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_1">Americano</label>
+          <input id="_1" type="checkbox">
+          <b>
+            <div class="orange-text">Also known as 'Lungo' or 'Long Black' and made by diluting 1-2 shots of espresso with hot water in order to approximate the texture, flavor and body of an American-style drip coffee. Said to have been originally devised as a sort of insult to Americans who wanted their Italian espresso diluted.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_2">Macchiato</label>
+          <input id="_2" type="checkbox">
+          <b>
+            <div class="orange-text">Meaning “stained” - Described as ‘strong, marked or stained’. A touch of steamed foamed milk added to a double shot of coffee extract made from 24gm of fresh ground beans producing 75ml of essence. Served in glass.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_3">Dopio</label>
+          <input id="_3" type="checkbox">
+          <b>
+            <div class="orange-text">Italian term for double. Double Espresso or twice the amount of coffee and twice the amount of water. Basically it describes two shots of espresso in one demitasse container.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_4">Cappuccino</label>
+          <input id="_4" type="checkbox">
+          <b>
+            <div class="orange-text">“Cap”:  A ‘traditional morning heart starter’. Steamed foamed velvety milk poured over one shot (1) of coffee oil extract made from 12gm of freshly ground beans producing 38ml of essence. Finished by topping with foam and a sprinkle of chocolate powder. Served in a pre heated vitrified ceramic cup.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_5">Babycino</label>
+          <input id="_5" type="checkbox">
+          <b>
+            <div class="orange-text">A cappuccino styled drink served in an up-market café typically for children. It consists of warm milk in a small cup and topped with milk froth and chocolate powder. No espresso coffee essence is added.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_6">Viennese Coffee</label>
+          <input id="_6" type="checkbox">
+          <b>
+            <div class="orange-text">Brewed black coffee of any roast or origin topped and served with whipped cream.</div>
+          </b>
+        </li>
+        <li>
+          <label class="collapse" for="_7">Breve</label>
+          <input id="_7" type="checkbox">
+          <b>
+            <div class="orange-text"> A term in Italian that means short and is used to describe an espresso coffee drink made with a half-and-half light cream or semi-skim milk instead of full fat milk</div>
+          </b>
+        </li>
+      </ul>
+      <hr>
+      <h3 class="green-text">Some other information</h3>
+      <a href="mailto:contact@email-server.com?Subject=Hello%20World" target="_top">Contact Email</a>
       <br>
+      <a href="tel:555-555-555">Contact Number</a>
       <br>
       <br>
     </div>
-    <footer>
-      <hr>
-      <a class="purple-text left" href="../Lab1/index.html">   Lab 1</a>
-    </footer>
   </body>
+  <footer>
+    <hr>
+    <a class="purple-text left" href="../Lab1/index.html">Lab 1</a>
+    <a class="purple-text right" href="#top">Go back to top</a>
+  </footer>
 </html>
