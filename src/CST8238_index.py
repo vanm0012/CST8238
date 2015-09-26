@@ -18,3 +18,4 @@ with _html:
         with ul():
             li(a("Lab 1", href="Lab1/index.html"))
             li(a("Lab 2", href="Lab2/index.html"))
+            li(a("Lab 3", href="Lab3/index.html"))
