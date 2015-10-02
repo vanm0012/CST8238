@@ -40,6 +40,8 @@ def build():
     os.mkdir("Lab4")
     print("     Building index")
     PyPages.build(lab4_index._html, "Lab4/index.html")
+    print("     Copying Stylesheet")
+    shutil.copyfile("src/Lab4/StyleSheet.css", "Lab4/StyleSheet.css")
 
     print()
 
