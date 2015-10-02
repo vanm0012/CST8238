@@ -9,9 +9,10 @@ from src import  CST8238_index
 from src.Lab1 import lab1_index
 from src.Lab2 import lab2_index
 from src.Lab3 import lab3_index, lab3_ColRowSpan
+from src.Lab4 import lab4_index
 
 menu = """
-usage: make [--clean] [--build]
+usage: make [clean] [build]
 """
 
 def build():
@@ -35,14 +36,23 @@ def build():
     PyPages.build(lab3_ColRowSpan._html, "Lab3/ColRowSpan.html")
 
 
+    print("Builing lab 4")
+    os.mkdir("Lab4")
+    print("     Building index")
+    PyPages.build(lab4_index._html, "Lab4/index.html")
+
     print()
 
 def clean():
-    print("Cleaning website...")
-    shutil.rmtree("Lab1")
-    shutil.rmtree("Lab2")
-    shutil.rmtree("Lab3")
-    os.remove("index.html")
+    try:
+        print("Cleaning website...")
+        shutil.rmtree("Lab1")
+        shutil.rmtree("Lab2")
+        shutil.rmtree("Lab3")
+        shutil.rmtree("Lab4")
+        os.remove("index.html")
+    except FileNotFoundError:
+        print("Nothing to clean")
 
     print()
 
