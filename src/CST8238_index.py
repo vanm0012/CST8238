@@ -19,3 +19,4 @@ with _html:
             li(a("Lab 1", href="Lab1/index.html"))
             li(a("Lab 2", href="Lab2/index.html"))
             li(a("Lab 3", href="Lab3/index.html"))
+            li(a("Lab 4", href="Lab4/index.html"))
