@@ -27,7 +27,7 @@ def build():
     PyPages.build(lab1_index._html, "build/Lab1/index.html")
 
     print("Building lab 2 index")
-    os.mkdir("Lab2")
+    os.mkdir("build/Lab2")
     PyPages.build(lab2_index._html, "build/Lab2/index.html")
 
     print("Buidling lab 3")
