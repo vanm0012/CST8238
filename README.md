@@ -6,8 +6,8 @@ Repo for Web Programming
 
 `cd build`
 
-`../make --build`
+`../make build`
 
 
 + When changes are made:
-`../make --clean --build`
+`../make clean build`
