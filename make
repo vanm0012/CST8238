@@ -17,42 +17,40 @@ usage: make [clean] [build]
 
 def build():
     print("Buidling website...")
+    os.mkdir("build")
+
     print("Building homepage index")
-    PyPages.build(CST8238_index._html, "index.html")
+    PyPages.build(CST8238_index._html, "build/index.html")
 
     print("Building lab 1 index")
-    os.mkdir("Lab1")
-    PyPages.build(lab1_index._html, "Lab1/index.html")
+    os.mkdir("build/Lab1")
+    PyPages.build(lab1_index._html, "build/Lab1/index.html")
 
     print("Building lab 2 index")
     os.mkdir("Lab2")
-    PyPages.build(lab2_index._html, "Lab2/index.html")
+    PyPages.build(lab2_index._html, "build/Lab2/index.html")
 
     print("Buidling lab 3")
-    os.mkdir("Lab3")
+    os.mkdir("build/Lab3")
     print("     Building index")
-    PyPages.build(lab3_index._html, "Lab3/index.html")
+    PyPages.build(lab3_index._html, "build/Lab3/index.html")
     print("     Building ColRowSpan")
-    PyPages.build(lab3_ColRowSpan._html, "Lab3/ColRowSpan.html")
+    PyPages.build(lab3_ColRowSpan._html, "build/Lab3/ColRowSpan.html")
 
 
     print("Builing lab 4")
-    os.mkdir("Lab4")
+    os.mkdir("build/Lab4")
     print("     Building index")
-    PyPages.build(lab4_index._html, "Lab4/index.html")
+    PyPages.build(lab4_index._html, "build/Lab4/index.html")
     print("     Copying Stylesheet")
-    shutil.copyfile("src/Lab4/StyleSheet.css", "Lab4/StyleSheet.css")
+    shutil.copyfile("src/Lab4/StyleSheet.css", "build/Lab4/StyleSheet.css")
 
     print()
 
 def clean():
     try:
         print("Cleaning website...")
-        shutil.rmtree("Lab1")
-        shutil.rmtree("Lab2")
-        shutil.rmtree("Lab3")
-        shutil.rmtree("Lab4")
-        os.remove("index.html")
+        shutil.rmtree("build/")
     except FileNotFoundError:
         print("Nothing to clean")
 
