@@ -18,11 +18,11 @@ Using the knowledge gained in these materials create a â€˜Common Look and Feelâ€
 
 Each page in your web site should have at least the following identical common elements: Header, Footer and Menu
 Header
-Lab Number, Course Name, Course Number
+    Lab Number, Course Name, Course Number
 Menu
-Links to both Index.html and Multimedia.html
+    Links to both Index.html and Multimedia.html
 Footer
-Student Number, First Name, Last Name, Email Address
+    Student Number, First Name, Last Name, Email Address
 
 The Content Area in each page will be different depending on the purpose of the page (described in Task 3 and Task 4).
 
@@ -95,6 +95,23 @@ from PyPages import templates
 
 _html = templates.html_head("CST8238 - Lab 4")
 with _html:
-    with body(style="text-align:center;"):
-        style(rel="stylesheet", type="text/css", href="StyleSheet.css")
-        h1("Lab 4 - Index")
+    with body():
+        link(rel="stylesheet", type="text/css", href="StyleSheet.css")
+
+        br()
+        with div(id="header"):
+            h1("Lab 4 | Web Programming | CST8238")
+
+        with div(id="menu"):
+            with ul(cls="menu"):
+                li(a("Index", href="index.html"))
+                li(a("Multimedia", href="Multimedia.html"))
+
+        br()
+        with div(id="content"):
+            h1("HELLO WORLD")
+            p("My name is Tryton Van Meer (Student Number: 040790151)")
+
+
+        with div(id="footer"):
+            p("040790151 | Tryton Van Meer | vanm0012@algonquinlive.com")

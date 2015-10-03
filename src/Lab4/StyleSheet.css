@@ -1,0 +1,86 @@
+/* Tags */
+html
+{
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+body
+{
+  text-align: center;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+h1
+{
+  color: #ff4081;
+}
+
+p
+{
+  padding: 20px;
+}
+
+/*Header*/
+#header
+{
+  font-style: oblique;
+  word-spacing: 50px;
+  outline: #00e676 dotted thick;
+}
+
+
+/* Menu */
+#menu
+{
+  outline: #9fa8da solid thin;
+}
+
+/* Menu */
+#menu ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li
+{
+  display: inline;
+}
+
+#menu a:link, #menu a:visited, #menu a:hover, #menu a:active
+{
+  color: #7c4dff;
+}
+
+#menu a:hover
+{
+  text-shadow: 2px 2px #b388ff;
+}
+
+/* Content */
+#content
+{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#content a:link, #content a:visited, #content a:hover, #content a:active
+{
+  color: #000000;
+}
+
+/* Footer */
+#footer
+{
+  font-style:  italic;
+  word-spacing: 20px;
+  outline: #00e676 solid thin;
+  position: relative;
+  bottom: 0;
+  left:0;
+  right:0;
+}

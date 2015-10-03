@@ -9,7 +9,7 @@ from src import  CST8238_index
 from src.Lab1 import lab1_index
 from src.Lab2 import lab2_index
 from src.Lab3 import lab3_index, lab3_ColRowSpan
-from src.Lab4 import lab4_index
+from src.Lab4 import lab4_index, lab4_multimedia
 
 menu = """
 usage: make [clean] [build]
@@ -42,6 +42,8 @@ def build():
     os.mkdir("build/Lab4")
     print("     Building index")
     PyPages.build(lab4_index._html, "build/Lab4/index.html")
+    print("     Building Multimedia")
+    PyPages.build(lab4_multimedia._html, "build/Lab4/Multimedia.html")
     print("     Copying Stylesheet")
     shutil.copyfile("src/Lab4/StyleSheet.css", "build/Lab4/StyleSheet.css")
 
