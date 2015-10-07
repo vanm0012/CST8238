@@ -52,9 +52,9 @@ with _html:
     with head():
         util.links()
     with body():
-        with nav(cls="blue darken-2 white-text"):
-            h1("Social", cls="center")
-            util.menu()
+        with nav(cls="blue darken-2 white-text center"):
+            h1("Social")
+        util.menu()
 
     #FOOTER
     with div(cls="footer blue white-text valign-wrapper center"):

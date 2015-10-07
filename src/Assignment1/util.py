@@ -14,7 +14,7 @@ def links():
 
 def menu():
     with div(cls="menu"):
-        with ul():
+        with ul(cls="white-text"):
             li(a("Home", href="index.html"), cls="orange")
             li(a("Biography", href="Biography.html"), cls="orange")
             li(a("Social", href="Social.html"), cls="orange")

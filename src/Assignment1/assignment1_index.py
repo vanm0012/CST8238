@@ -53,9 +53,9 @@ with _html:
     with head():
         util.links()
     with body():
-        with nav(cls="blue darken-2 white-text"):
-            h1("Web Programming • Assignment 1", cls="center")
-            util.menu()
+        with nav(cls="blue darken-2 white-text center"):
+            h1("Web Programming • Assignment 1")
+        util.menu()
 
     #FOOTER
     with div(cls="footer blue white-text valign-wrapper center"):
