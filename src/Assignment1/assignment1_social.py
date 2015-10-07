@@ -54,10 +54,8 @@ with _html:
     with body():
         with nav(cls="blue darken-1 white-text"):
             h1("Social", cls="center")
-            with div():
-                with ul(cls="menu"):
-                    li(a("Home", cls="menu", href="index.html"), cls="menu orange accent-3")
-                    li(a("Biography", cls="menu", href="Biography.html"), cls="menu orange accent-3")
-                    li(a("Social", cls="menu", href="Social.html"), cls="menu orange accent-3")
-                    li(a("Image Gallery", cls="menu", href="ImageGallery.html"), cls="menu orange accent-3")
-                    li(a("Resume", cls="menu", href="Resume.html"), cls="menu orange accent-3")
+            util.menu()
+
+    #FOOTER
+    with div(cls="footer blue accent-3 white-text valign-wrapper center"):
+        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")

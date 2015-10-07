@@ -11,3 +11,12 @@ from dominate.tags import *
 def links():
     link(rel="stylesheet", type="text/css", href="Stylesheet.css") #CSS Stylesheet
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Roboto") #Roboto Font
+
+def menu():
+    with div(cls="menu"):
+        with ul():
+            li(a("Home", href="index.html"), cls="orange accent-2")
+            li(a("Biography", href="Biography.html"), cls="orange accent-2")
+            li(a("Social", href="Social.html"), cls="orange accent-2")
+            li(a("Image Gallery", href="ImageGallery.html"), cls="orange accent-2")
+            li(a("Resume", href="Resume.html"), cls="orange accent-2")
