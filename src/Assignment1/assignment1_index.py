@@ -53,10 +53,10 @@ with _html:
     with head():
         util.links()
     with body():
-        with nav(cls="blue darken-1 white-text"):
+        with nav(cls="blue darken-2 white-text"):
             h1("Web Programming • Assignment 1", cls="center")
             util.menu()
 
     #FOOTER
-    with div(cls="footer blue accent-3 white-text valign-wrapper center"):
+    with div(cls="footer blue white-text valign-wrapper center"):
         span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")

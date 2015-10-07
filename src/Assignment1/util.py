@@ -15,8 +15,8 @@ def links():
 def menu():
     with div(cls="menu"):
         with ul():
-            li(a("Home", href="index.html"), cls="orange accent-2")
-            li(a("Biography", href="Biography.html"), cls="orange accent-2")
-            li(a("Social", href="Social.html"), cls="orange accent-2")
-            li(a("Image Gallery", href="ImageGallery.html"), cls="orange accent-2")
-            li(a("Resume", href="Resume.html"), cls="orange accent-2")
+            li(a("Home", href="index.html"), cls="orange")
+            li(a("Biography", href="Biography.html"), cls="orange")
+            li(a("Social", href="Social.html"), cls="orange")
+            li(a("Image Gallery", href="ImageGallery.html"), cls="orange")
+            li(a("Resume", href="Resume.html"), cls="orange")
