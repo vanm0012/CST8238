@@ -20,3 +20,7 @@ with _html:
             li(a("Lab 2", href="Lab2/index.html"))
             li(a("Lab 3", href="Lab3/index.html"))
             li(a("Lab 4", href="Lab4/index.html"))
+        br()
+        h1(u("Assignments"))
+        with ul():
+            li(a("Assignment 1", href="Assignment1/index.html"))

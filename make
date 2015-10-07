@@ -10,6 +10,7 @@ from src.Lab1 import lab1_index
 from src.Lab2 import lab2_index
 from src.Lab3 import lab3_index, lab3_ColRowSpan
 from src.Lab4 import lab4_index, lab4_multimedia
+from src.Assignment1 import assignment1_biography, assignment1_index, assignment1_image_gallery, assignment1_resume, assignment1_social
 
 menu = """
 usage: make [clean] [build]
@@ -46,6 +47,21 @@ def build():
     PyPages.build(lab4_multimedia._html, "build/Lab4/Multimedia.html")
     print("     Copying Stylesheet")
     shutil.copyfile("src/Lab4/StyleSheet.css", "build/Lab4/StyleSheet.css")
+
+    print("Building Assignment 1")
+    os.mkdir("build/Assignment1")
+    print("     Buidling index")
+    PyPages.build(assignment1_index._html, "build/Assignment1/index.html")
+    print("     Buidling Biography")
+    PyPages.build(assignment1_biography._html, "build/Assignment1/Biography.html")
+    print("     Buidling Image Gallery")
+    PyPages.build(assignment1_image_gallery._html, "build/Assignment1/ImageGallery.html")
+    print("     Buidling Social")
+    PyPages.build(assignment1_social._html, "build/Assignment1/Social.html")
+    print("     Buidling Resume")
+    PyPages.build(assignment1_resume._html, "build/Assignment1/Resume.html")
+    print("     Copying Stylesheet")
+    shutil.copyfile("src/Assignment1/Stylesheet.css", "build/Assignment1/Stylesheet.css")
 
     print()
 
