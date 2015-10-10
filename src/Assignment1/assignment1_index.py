@@ -66,7 +66,7 @@ with _html:
 
         with util.main():
             br()
-            p(index_para)
+            p(index_para, cls="center", id="index")
 
     #FOOTER
     util.footer()
