@@ -56,9 +56,27 @@ with _html:
             h1("Image Gallery")
         util.menu()
 
-        br()
-        h1("IMAGE GALLERY", cls="black-text")
+        with util.main():
+            br()
+            with div(cls="img-gallery"):
+                with div(cls="row center"):
+                    with div(cls="col"):
+                        img(src="images/a.png", alt="Image 1")
+                        blockquote("Found in the Andromeda Galaxy, and eventually sold for 20 Billion Ningi.")
+                    with div(cls="col"):
+                        img(src="images/b.png", alt="Image 2")
+                        blockquote("A spooky ghost.")
+                    with div(cls="col"):
+                        img(src="images/c.png", alt="Image 3")
+                        blockquote("The common head wear of techno wizards. Lighting not included.")
+
+                with div(cls="row center"):
+                    with div(cls="col"):
+                        img(src="images/d.png", alt="Image 4")
+                        blockquote("Some prefer spoon grenades.")
+                    with div(cls="col"):
+                        img(src="images/e.png", alt="Image 5")
+                        blockquote("A portrait of the tyranical PumKing, who ruled for 3000 years on the planet Festivisas III.")
 
     #FOOTER
-    with div(cls="footer blue white-text valign-wrapper center"):
-        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")
+    util.footer()

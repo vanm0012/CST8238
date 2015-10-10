@@ -56,6 +56,43 @@ with _html:
             h1("Resume")
         util.menu()
 
+        with util.main():
+            with div(cls="row"):
+                with div(cls="col"):
+                    h2("Skills")
+                with div(cls="col"):
+                    with ul():
+                        li("Wizardry and such")
+                        li("Master in the four elements")
+                        li("And those other ones")
+
+            with div(cls="right", style="padding-right: 20%"):
+                a("Download Resume", href="resume.md")
+
+            with div(cls="row"):
+                div(h2("Past Experience"))
+
+                with div(cls="row right"):
+                    div(h3("Professor at the University of Galatic Magic"), cls="col left")
+                    with div(cls="col right"):
+                        with ul(cls="none"):
+                            li("Teach many students different forms of Magic and its uses")
+                            li("Ensure they are well versed in how to use magic safely")
+
+                with div(cls="row right"):
+                    div(h3("Galatic Hero"), cls="col left")
+                    with div(cls="col right"):
+                        with ul(cls="none"):
+                            li("Defeated such monsters as PumKing, and the Devourer of Galaxies")
+                            li("Save countless planets from destruction")
+
+                with div(cls="row right"):
+                    div(h3("Space Janitor"), cls="col left")
+                    with div(cls="col right"):
+                        with ul(cls="none"):
+                            li("The Universe just began, not much else to do")
+
+
+
     #FOOTER
-    with div(cls="footer blue white-text valign-wrapper center"):
-        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")
+    util.footer()

@@ -56,6 +56,17 @@ with _html:
             h1("Social")
         util.menu()
 
+        with util.main():
+            br()
+            br()
+            br()
+            span("Jack is a strong supporter of FOSS, and therefore does not use Facebook")
+            br()
+            with span("Jack the Technomancer's Phone Number"):
+                a("1-800-768-345-678", href="tel:1800768345678")
+            br()
+            with span("Jack the Technomancer's Email: "):
+                a("jack.technomancer@spacemail.io", href="mailto:jack.technomancer@spacemail.io")
+
     #FOOTER
-    with div(cls="footer blue white-text valign-wrapper center"):
-        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")
+    util.footer()

@@ -48,6 +48,13 @@ from PyPages import templates
 from . import util
 
 
+index_para = """
+Welcome to my webpage for Assignment 1.
+Here you'll find the biography of the great
+Jack the Technomancer, his resume, and how to
+contact him. Some other treats are in store as well.
+"""
+
 _html = templates.html_head("CST8238 - Assignment 1")
 with _html:
     with head():
@@ -57,6 +64,9 @@ with _html:
             h1("Web Programming • Assignment 1")
         util.menu()
 
+        with util.main():
+            br()
+            p(index_para)
+
     #FOOTER
-    with div(cls="footer blue white-text valign-wrapper center"):
-        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")
+    util.footer()

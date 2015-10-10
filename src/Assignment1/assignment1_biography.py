@@ -38,6 +38,21 @@ from PyPages import templates
 
 from . import util
 
+para_1 = """
+Born in the year -5000000, Jack the Techno-Wizard came to a barren
+void that would soon become our universe. Jack, alone in the void
+became very well versed in these void magics
+"""
+
+para_2 = """
+Using the tremendous might that Jack's magic gives him,
+he single-handedly defeats the Devourer of Galaxies in
+the year 500 B.C. Earth time.
+"""
+
+para_3 = """
+In the year 1180, Jack accedently unleases a whirlwind, damaging Kyoto, Japan.
+"""
 
 _html = templates.html_head("CST8238 - Assignment 1")
 with _html:
@@ -48,6 +63,14 @@ with _html:
             h1("Biography")
         util.menu()
 
+        with util.main():
+            with div(cls="row center"):
+                with div(cls="col"):
+                    p(para_1)
+                with div(cls="col"):
+                    p(para_2)
+                with div(cls="col"):
+                    p(para_3)
+
     #FOOTER
-    with div(cls="footer blue white-text valign-wrapper center"):
-        span("Student Number: 040790151 • Name: Tryton Van Meer • Email: vanm0012@algonquinlive.com")
+    util.footer()
