@@ -24,6 +24,7 @@ def menu():
             li(a("Social", href="Social.html"), cls="orange")
             li(a("Image Gallery", href="ImageGallery.html"), cls="orange")
             li(a("Resume", href="Resume.html"), cls="orange")
+            li(a("Bonus Page", href="bonus.html"), cls="orange")
 
 def footer():
     with div(cls="footer blue white-text valign-wrapper center"):
