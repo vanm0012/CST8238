@@ -67,6 +67,7 @@ with _html:
         with util.main():
             br()
             p(index_para, cls="center", id="index")
+            p("Try the konami code!", cls="white-text center")
 
     #FOOTER
     util.footer()

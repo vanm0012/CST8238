@@ -15,6 +15,9 @@ def links():
     link(rel="stylesheet", type="text/css", href="css/Stylesheet.css") #CSS Stylesheet
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Roboto") #Roboto Font
     link(rel="stylesheet", type="text/css", href="css/octicons.css") #Octicon Icons
+    script(src="js/cheet.min.js") #Cheet JS
+    script("cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { document.location.href = 'bonus.html'; });")
+
 
 def menu():
     with div(cls="menu"):
@@ -24,7 +27,6 @@ def menu():
             li(a("Social", href="Social.html"), cls="orange")
             li(a("Image Gallery", href="ImageGallery.html"), cls="orange")
             li(a("Resume", href="Resume.html"), cls="orange")
-            li(a("Bonus Page", href="bonus.html"), cls="orange")
 
 def footer():
     with div(cls="footer blue white-text valign-wrapper center"):
