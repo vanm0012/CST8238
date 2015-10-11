@@ -65,6 +65,8 @@ def build():
     PyPages.build(assignment1_bonus._html, "build/Assignment1/bonus.html")
     print("     Copying CSS")
     shutil.copytree("src/Assignment1/css", "build/Assignment1/css")
+    print("     Copying JS")
+    shutil.copytree("src/Assignment1/js", "build/Assignment1/js")
     print("     Copying Images")
     shutil.copytree("src/Assignment1/images", "build/Assignment1/images")
 
