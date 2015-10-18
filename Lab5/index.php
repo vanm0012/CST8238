@@ -15,7 +15,12 @@
     echo "Tryton Van Meer";
     echo "040790151";
     echo "Hello, World! I am using PHP!";
-    echo 'The course is going fine";
+    echo "The course is going fine";
+    echo '<a href="../Lab1/index.html">Lab 1</a>';
+    echo '<a href="../Lab1/index.html">Lab 2</a>';
+    echo '<a href="../Lab1/index.html">Lab 3</a>';
+    echo '<a href="../Lab1/index.html">Lab 4</a>';
+    echo '<a href="../Assignment1/index.html">Assignment 1</a>';
     ?>
   </body>
 </html>
