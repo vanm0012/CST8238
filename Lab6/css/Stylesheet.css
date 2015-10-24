@@ -1613,7 +1613,7 @@ nav
   position: relative;
   align-items: center;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
-  z-index: 999;
+  z-index: 10;
 }
 
 
@@ -1629,11 +1629,11 @@ nav
   box-sizing: border-box;
   width: 10%;
   height: 100vh;
+  z-index: 20;
 }
 
 .sidebar ul
 {
-  margin-top: 75px;
   list-style-type: none;
 }
 
