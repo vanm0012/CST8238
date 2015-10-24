@@ -1624,10 +1624,11 @@ nav
 .sidebar
 {
   position: fixed;
+  top: 0;
   float: left;
   box-sizing: border-box;
   width: 10%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .sidebar ul
