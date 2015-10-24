@@ -1623,7 +1623,6 @@ nav
   box-sizing: border-box;
   width: 10%;
   height: 100%;
-  background-color: inherit;
 }
 
 .sidebar ul
@@ -1633,6 +1632,7 @@ nav
 
 .sidebar li
 {
+  color: inherit;
   margin-bottom: 10px;
 }
 
