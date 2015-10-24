@@ -1,6 +1,4 @@
 <?php
-include("Menu.php");
-
 function _header()
 {
   echo '<nav class="purple darken-2 white-text center">
