@@ -1602,13 +1602,6 @@ ul.none
   list-style-type: none;
 }
 
-.container
-{
-  margin-top: -50px;
-  padding-top: -50px;
-  box-sizing: border-box;
-}
-
 /****************************************************
 / Nav Bar and Banner
 /****************************************************/
@@ -1628,22 +1621,34 @@ nav
 
 .sidebar
 {
-  float: left;
-  width: 25%;
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
 }
 
 .sidebar li
 {
-  list-style: none;
-  font-size: 16px;
-  color: inherit;
-  line-height: 24px;
+  float: none;
+  padding: 0 15px;
 }
 
 .sidebar a
 {
-  color: inherit;
-  text-decoration: none;
+  color: #444;
+  display: block;
+  font-size: 1rem;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 15px;
 }
 
 /****************************************************
