@@ -14,7 +14,6 @@ include("Footer.php");
   <body>
     <?php _header(); ?>
     <main>
-      <?php _menu(); ?>
       <p>Hello World</p>
     </main>
   </body>
