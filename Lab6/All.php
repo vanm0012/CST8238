@@ -12,10 +12,9 @@ include("Footer.php");
     <link href="css/Stylesheet.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <?php
-    _header();
-
-    _footer();
-    ?>
+    <?php _header(); ?>
+    <main>
+    </main>
   </body>
+  <?php _footer(); ?>
 </html>
