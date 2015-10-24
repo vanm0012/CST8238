@@ -14,7 +14,7 @@ function _menu()
           <a href="Ten.php">Ten</a>
         </li>
       </ul>
-    </div>
+    </aside>
   ';
 }
 ?>
