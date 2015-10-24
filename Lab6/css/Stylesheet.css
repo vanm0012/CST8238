@@ -1636,6 +1636,11 @@ nav
   padding: 0 15px;
 }
 
+.sidebar li:hover
+{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
 .sidebar a
 {
   display: block;
