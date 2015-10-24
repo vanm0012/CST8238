@@ -1621,46 +1621,27 @@ nav
 / Sidebar
 /****************************************************/
 
-#sidebar
+.sidebar
 {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#sidebar_inner
-{
-  position: fixed;
-  top: 40px;
-  left: -250px;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#sidebar:hover
-{
-    left: 250px;
-}
-#sidebar:hover #sidebar_inner
-{
-    left: 0;
+  position:absolute;
+  left:0;
+  top:75px;
+  bottom: 0;
+  width: 180px;
 }
 
-#sidebar ul
+.sidebar ul
 {
   list-style-type: none;
 }
 
-#sidebar li
+.sidebar li
 {
   float: none;
+  padding: 0 15px;
 }
 
-#sidebar a
+.sidebar a
 {
   color: inherit;
   text-decoration: none;
