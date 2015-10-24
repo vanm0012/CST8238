@@ -17,7 +17,10 @@ include("Footer.php");
       <div class="center">
       <?php
         for ($x = 99; $x > 0; $x--) {
-          echo "The number is: $x <br>";
+          echo "$x bottles of beer on the wall... <br>";
+          echo "$ bottles of beer.. <br>"
+          echo "You take one down, you apss it around... <br>"
+          echo "$x-1 bottles of beer on the wall. <br><br>"
         }
       ?>
     </div>
