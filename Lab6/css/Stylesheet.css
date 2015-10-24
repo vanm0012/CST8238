@@ -1630,7 +1630,7 @@ nav
   width: 10%;
   height: 100vh;
   z-index: 20;
-  box-shadow: 8px 0 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 0 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 .sidebar ul
