@@ -1626,12 +1626,12 @@ nav
   top: 0;
   margin: 0;
   height: 100%;
-  height: calc(100% + 60px);
-  height: -moz-calc(100%);
-  padding-bottom: 60px;
   background-color: #fff;
-  z-index: 999;
-  overflow-y: auto;
+}
+
+.sidebar ul
+{
+  list-style-type: none;
 }
 
 .sidebar li
@@ -1648,6 +1648,7 @@ nav
   height: 64px;
   line-height: 64px;
   padding: 0 15px;
+  text-decoration: none;
 }
 
 /****************************************************
