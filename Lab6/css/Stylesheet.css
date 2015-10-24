@@ -1627,7 +1627,7 @@ nav
   box-sizing: border-box;
   width: 10%;
   height: 90vh;
-  background: repeat-y 50% 0;
+  background-repeat: repeat-y;
 }
 
 .sidebar ul
