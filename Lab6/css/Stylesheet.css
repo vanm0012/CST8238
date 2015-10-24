@@ -1633,6 +1633,7 @@ nav
   color: inherit;
   list-style-type: none;
   height: 30px;
+  width: 60px;
   margin: 3 10px 1px;
   padding: 5px 5px 5px 5px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
