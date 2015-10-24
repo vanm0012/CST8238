@@ -1601,6 +1601,18 @@ ul.none
   list-style-type: none;
 }
 
+#container
+{
+  width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#content
+{
+  overflow: auto;
+}
+
 /****************************************************
 / Nav Bar and Banner
 /****************************************************/
