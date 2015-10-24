@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("Header.php");
+include("Menu.php");
 include("Footer.php");
 ?>
 <html>
@@ -12,6 +13,7 @@ include("Footer.php");
   </head>
   <body>
     <?php _header(); ?>
+    <?php _menu(); ?>
     <main>
       <div class="center">
       <?php
