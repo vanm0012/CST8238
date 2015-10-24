@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("Header.php");
-include("Menu");
+include("Menu.php");
 include("Footer.php");
 ?>
 <html>
@@ -12,9 +12,20 @@ include("Footer.php");
     <link href="css/Stylesheet.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <?php
-    _header();
-
-    ?>
+    <?php _header(); ?>
+    <main>
+      <?php _menu(); ?>
+      <div class="center">
+      <?php
+        /*for ($x = 90; $x > 0; $x = $x - 10) {
+          echo "$x bottles of beer on the wall... <br>";
+          echo "$x bottles of beer.. <br>";
+          echo "You take ten down, you pass them around... <br>";
+          echo ($x - 10) . " bottles of beer on the wall. <br><br>";
+        }*/
+      ?>
+    </div>
+    </main>
   </body>
+  <?php _footer(); ?>
 </html>
