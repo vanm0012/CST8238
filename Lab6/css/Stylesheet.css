@@ -1580,12 +1580,7 @@ body
 
 main
 {
-  position: absolute;
   flex: 1 0 auto;
-  left: 180px;
-  top: 75px;
-  right: 0;
-  bottom: 0;
 }
 
 p
