@@ -1619,10 +1619,9 @@ nav
 
 .sidebar
 {
-  position:absolute;
-  left:0;
-  top:75px;
-  bottom: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 180px;
 }
 
