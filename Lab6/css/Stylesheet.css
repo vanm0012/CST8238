@@ -1623,6 +1623,7 @@ nav
   box-sizing: border-box;
   width: 10%;
   min-height: 100vh;
+  height: 100%;
 }
 
 .sidebar ul
