@@ -1704,6 +1704,7 @@ nav
   height: 75px;
   bottom: 0;
   font-weight: lighter;
+  z-index: 30;
 }
 
 
