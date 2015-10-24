@@ -1621,7 +1621,7 @@ nav
 {
   float: left;
   box-sizing: border-box;
-  width: 100px;
+  width: 25%;
   height: 100%;
   background-color: inherit;
 }
@@ -1633,7 +1633,6 @@ nav
 
 .sidebar li
 {
-  left: 0;
   border-bottom: 1px solid rgba(0,0,0,.6);
   border-top: 1px solid rgba(255,255,255,.2);
 }
