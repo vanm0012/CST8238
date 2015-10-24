@@ -20,7 +20,7 @@ include("Footer.php");
         for ($x = 99; $x > 0; $x--) {
           echo "$x bottles of beer on the wall... <br>";
           echo "$x bottles of beer.. <br>";
-          echo "You take one down, you apss it around... <br>";
+          echo "You take one down, you pass it around... <br>";
           echo ($x - 1) . " bottles of beer on the wall. <br><br>";
         }
       ?>
