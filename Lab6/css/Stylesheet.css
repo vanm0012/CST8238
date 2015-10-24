@@ -1643,6 +1643,7 @@ nav
 
 .sidebar a
 {
+  text-align: center;
   display: block;
   color: inherit;
   text-decoration: none;
