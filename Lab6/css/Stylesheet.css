@@ -1629,13 +1629,11 @@ nav
 .sidebar ul
 {
   list-style-type: none;
-  width: 70%;
-  margin: auto;
 }
 
 .sidebar li
 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar li:hover
