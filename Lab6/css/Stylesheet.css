@@ -1630,14 +1630,13 @@ nav
 
 .menu li
 {
-  color: inherit;
-  list-style-type: none;
-  height: 30px;
-  width: 60px;
-  margin: 3 10px 1px;
-  padding: 5px 5px 5px 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: inherit;
+  margin-right: 30px;
+  width: 150px;
+  line-height: 60px;
 }
 
 .menu li:hover
