@@ -1631,12 +1631,12 @@ nav
 .sidebar ul
 {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .sidebar li
 {
-  background-color: inherit;
-  margin-bottom: 10px;
+
 }
 
 .sidebar li:hover
