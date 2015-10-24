@@ -1626,8 +1626,7 @@ nav
   float: left;
   box-sizing: border-box;
   width: 10%;
-  height: 100vh;
-  overflow: auto;
+  height: 90vh;
 }
 
 .sidebar ul
