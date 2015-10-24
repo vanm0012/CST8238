@@ -1611,7 +1611,8 @@ nav
   height: 75px;
   position: relative;
   align-items: center;
-  box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
 }
 
 
