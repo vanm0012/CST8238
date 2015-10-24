@@ -13,8 +13,8 @@ include("Footer.php");
   </head>
   <body>
     <?php _header(); ?>
-    <?php _menu(); ?>
     <main>
+      <?php _menu(); ?>
       <div class="center">
       <?php
         for ($x = 99; $x > 0; $x--) {
