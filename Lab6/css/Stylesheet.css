@@ -1630,6 +1630,7 @@ nav
 
 .menu li
 {
+  float: left;
   list-style: none;
   text-align: center;
   background-color: inherit;
