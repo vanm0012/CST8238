@@ -13,9 +13,12 @@ include("Footer.php");
   </head>
   <body>
     <?php _header(); ?>
-    <main>
-    <?php _menu(); ?>
-    </main>
+    <div class="container">
+      <?php _menu(); ?>
+      <main>
+        <p>Hello World</p>
+      </main>
+    </div>
   </body>
   <?php _footer(); ?>
 </html>
