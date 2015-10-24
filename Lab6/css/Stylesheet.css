@@ -1581,8 +1581,9 @@ body
 
 main
 {
+  float: right;
   flex: 1 0 auto;
-  width: 100%;
+  width: 70%;
 }
 
 p
@@ -1601,17 +1602,6 @@ ul.none
   list-style-type: none;
 }
 
-#container
-{
-  width: 1000px;
-  margin: 0 auto;
-  background: #fff;
-}
-
-#content
-{
-  overflow: auto;
-}
 
 /****************************************************
 / Nav Bar and Banner
@@ -1632,7 +1622,10 @@ nav
 
 .sidebar
 {
-  width: 180px;
+  float: left;
+  width: 25%;
+  min-height: 100%;
+  text-align: left;
   background: inherit;
 }
 
