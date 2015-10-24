@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("Header.php");
-include("Menu");
+include("Menu.php");
 include("Footer.php");
 ?>
 <html>
