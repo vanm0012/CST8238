@@ -2,7 +2,7 @@
 function _menu()
 {
   echo '
-    <aside class="sidebar">
+    <aside class="sidebar blue">
       <ul class="white-text">
         <li>
           <a href="All.php">All</a>
