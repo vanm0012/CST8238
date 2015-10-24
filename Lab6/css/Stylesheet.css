@@ -1621,7 +1621,7 @@ nav
 {
   float: left;
   box-sizing: border-box;
-  width: 15%;
+  width: 10%;
   height: 100%;
   background-color: inherit;
 }
@@ -1635,6 +1635,7 @@ nav
 {
   border-bottom: 1px solid rgba(0,0,0,.6);
   border-top: 1px solid rgba(255,255,255,.2);
+  padding-bottom: 10px;
 }
 
 .sidebar li:hover
