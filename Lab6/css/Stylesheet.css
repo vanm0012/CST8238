@@ -1625,6 +1625,7 @@ nav
 {
   position: fixed;
   top: 0;
+  margin-top: 75px;
   float: left;
   box-sizing: border-box;
   width: 10%;
