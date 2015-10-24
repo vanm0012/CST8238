@@ -1628,8 +1628,6 @@ nav
   box-sizing: border-box;
   width: 10%;
   height: 90vh;
-  margin-bottom: -5000px;
-  padding-bottom: -5000px;
 }
 
 .sidebar ul
