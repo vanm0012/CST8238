@@ -17,11 +17,11 @@ include("Footer.php");
       <?php _menu(); ?>
       <div class="center">
       <?php
-        for ($x = 99; $x > 0; $x = $x - 10) {
+        for ($x = 90; $x > 0; $x = $x - 10) {
           echo "$x bottles of beer on the wall... <br>";
           echo "$x bottles of beer.. <br>";
-          echo "You take one down, you apss it around... <br>";
-          echo ($x - 1) . " bottles of beer on the wall. <br><br>";
+          echo "You take ten down, you pass it around... <br>";
+          echo ($x - 10) . " bottles of beer on the wall. <br><br>";
         }
       ?>
     </div>
