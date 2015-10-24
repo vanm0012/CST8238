@@ -1575,7 +1575,6 @@ body
   margin: 0 auto;
   padding: 0;
   display: flex;
-  min-height: 100%;
   flex-direction: column;
 }
 
