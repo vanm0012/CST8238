@@ -1613,15 +1613,6 @@ nav
   align-items: center;
 }
 
-/****************************************************
-/ Index
-/****************************************************/
-
-#index
-{
-  width: 800px;
-  font-weight: bold;
-}
 
 /****************************************************
 / Menu Buttons
@@ -1642,7 +1633,6 @@ nav
 .menu li
 {
   color: inherit;
-  display: inline;
   list-style-type: none;
   height: 30px;
   margin: 3 10px 1px;
