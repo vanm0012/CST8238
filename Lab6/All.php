@@ -14,7 +14,11 @@ include("Footer.php");
   <body>
     <?php _header(); ?>
     <main>
-      <p>Hello World</p>
+      <?php
+        for ($x = 0; $x <= 10; $x++) {
+          echo "The number is: $x <br>";
+        } 
+      ?>
     </main>
   </body>
   <?php _footer(); ?>
