@@ -1620,19 +1620,18 @@ nav
 
 .menu
 {
-  margin-bottom: 50px
+  position:absolute;
+  top:0; bottom:0; left:0;
+  width:50px;
 }
 
 .menu ul
 {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .menu li
 {
-  color: inherit;
   list-style-type: none;
   height: 30px;
   margin: 3 10px 1px;
