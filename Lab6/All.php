@@ -23,6 +23,7 @@ include("Footer.php");
           echo "You take one down, you pass it around... <br>";
           echo ($x - 1) . " bottles of beer on the wall. <br><br>";
         }
+        echo "There are no more bottles of beer.";
       ?>
     </div>
     </main>
