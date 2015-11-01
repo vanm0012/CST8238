@@ -1611,6 +1611,7 @@ ul.none
 ol li
 {
   list-style-type: lower-roman;
+  list-style-position: inside;
   margin-left: 20px;
 }
 
