@@ -21,6 +21,13 @@ include("Footer.php");
         $calendar = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
         print_r($calendar);
       ?>
+      <h1>FOR loop</h1>
+      <?php
+      for ($x=0; $x<count($calendar); $x++)
+      {
+        echo "Month $x: $calendar($x)";
+      }
+      ?>
     </div>
     </main>
   </body>
