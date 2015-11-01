@@ -17,9 +17,15 @@ include("Footer.php");
     <main>
       <?php _menu(); ?>
       <div class="center">
-      <?php
-
-      ?>
+      <ol>
+        <li>What is the difference between a numeric and associative array?</li>
+        <li>What is the main benefit of array keyword?</li>
+        <li>What if the difference between foreach and each?</li>
+        <li>Ho can you create a mulidimensional array?</li>
+        <li>How can you determine the number of elements there are in an array?</li>
+        <li>What is the purpose of the explde function?</li>
+        <li>How can you set PHP's internal pointer into an array back to the first element of the array?</li>
+      </ol>
     </div>
     </main>
   </body>
