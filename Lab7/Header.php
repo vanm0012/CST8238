@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <?php
-
-    ?>
-  </body>
-</html>
+<?php
+function _header()
+{
+  echo '<nav class="purple darken-2 white-text center">
+          <h1>Tryton Van Meer | 040790151 | Lab 6 | Logical and Conditional Statements</h1>
+        </nav>';
+}
+?>

@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <?php
-
-    ?>
-  </body>
-</html>
+<?php
+function _footer()
+{
+  echo '<div class="footer purple white-text valign-wrapper center">
+    <span>Lab 6 • Logical and Conditional Statements</span>
+    <a class="right" href="https://github.com/vanm0012/CST8238">
+      <span class="octicon octicon-mark-github black-text"></span>
+  ';
+}
+?>
