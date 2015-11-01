@@ -19,7 +19,7 @@ include("Footer.php");
       <div class="center">
       <ol>
         <li>What is the difference between a numeric and associative array?
-          A:
+          <br>A:
         </li>
         <li>What is the main benefit of array keyword?
 
