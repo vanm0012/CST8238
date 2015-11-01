@@ -1622,11 +1622,6 @@ ol .upper
   list-style-type: upper-roman;
 }
 
-ol li .bold
-{
-  font-weight: bold;
-}
-
 /****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
