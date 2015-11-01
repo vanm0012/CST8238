@@ -54,45 +54,46 @@ include("Footer.php");
       <?php
         $calendar = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
         $x = 0;
-        while ($x < 11)
+        while ($x < 12)
         {
+          $num = $x + 1;
           switch ($x)
           {
             case 0:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
             case 1:
-              echo "Month $x: $calendar[$x] has 28, or 29 days";
+              echo "Month $num: $calendar[$x] has 28, or 29 days";
               break;
             case 2:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
             case 3:
-              echo "Month $x: $calendar[$x] has 30 days";
+              echo "Month $num: $calendar[$x] has 30 days";
               break;
             case 4:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
             case 5:
-              echo "Month $x: $calendar[$x] has 30 days";
+              echo "Month $num: $calendar[$x] has 30 days";
               break;
             case 6:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
             case 7:
-              echo "Month $x: $calendar[$x] has 30 days";
+              echo "Month $num: $calendar[$x] has 30 days";
               break;
             case 8:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
             case 9:
-              echo "Month $x: $calendar[$x] has 30 days";
+              echo "Month $num: $calendar[$x] has 30 days";
               break;
             case 10:
-              echo "Month $x: $calendar[$x] has 30 days";
+              echo "Month $num: $calendar[$x] has 30 days";
               break;
             case 11:
-              echo "Month $x: $calendar[$x] has 31 days";
+              echo "Month $num: $calendar[$x] has 31 days";
               break;
           }
 
