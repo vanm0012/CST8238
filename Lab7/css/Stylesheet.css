@@ -1595,6 +1595,8 @@ main
 p
 {
   width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 span
@@ -1618,6 +1620,11 @@ ol li
 ol .upper
 {
   list-style-type: upper-roman;
+}
+
+ol li .bold
+{
+  font-weight: bold;
 }
 
 /****************************************************
