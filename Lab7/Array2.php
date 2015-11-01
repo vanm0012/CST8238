@@ -22,7 +22,7 @@ include("Footer.php");
           <p>A numeric array uses indexs, which are numeric of course, and values are accessed by #array[index].
           Associative arrays use keys and function like a dictionary. Values are accessed by $array['key']</p>
         </li>
-        <li><b>What is the main benefit of array keyword?
+        <li><b>What is the main benefit of array keyword?</b>
           <p></p>
         </li>
         <li><b>What if the difference between foreach and each?</b>
