@@ -28,6 +28,9 @@ include("Footer.php");
         echo "Month $x: $calendar($x)";
         echo "<br>";
       }
+
+      sort($calendar);
+      print_r($calendar);
       ?>
     </div>
     </main>
