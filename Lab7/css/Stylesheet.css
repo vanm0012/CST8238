@@ -1622,7 +1622,7 @@ ol .upper
   list-style-type: upper-roman;
 }
 
-ol .bold
+ol li .bold
 {
   font-weight: bold;
 }
