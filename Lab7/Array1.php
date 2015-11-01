@@ -50,8 +50,53 @@ include("Footer.php");
         echo "<br>";
       ?>
 
-      <h1>While loop, SWITCH statement</h1>
+      <h1>WHILE loop, SWITCH statement</h1>
       <?php
+        $x = 0;
+        while ($x < 11)
+        {
+          switch ($x)
+          {
+            case 0:
+              echo "Month $x: $calendar[$x] has 31 days";
+              break;
+            case 1:
+              echo "Month $x: $calendar[$x] has 28, or 29 days";
+              break;
+            case 2:
+              echo "Month $x: $calendar[$x] has 31 days";
+              break;
+            case 3:
+              echo "Month $x: $calendar[$x] has 30 days";
+              break;
+            case 4:
+              echo "Month $x: $calendar[$x] has 31 days";
+              break;
+            case 5:
+              echo "Month $x: $calendar[$x] has 30 days";
+              break;
+            case 6:
+              echo "Month $x: $calendar[$x] has 31 days";
+              break;
+            case 7:
+              echo "Month $x: $calendar[$x] has 30 days";
+              break;
+            case 8:
+              echo "Month $x: $calendar[$x] has 31 days";
+              break;
+            case 9:
+              echo "Month $x: $calendar[$x] has 30 days";
+              break;
+            case 10:
+              echo "Month $x: $calendar[$x] has 330 days";
+              break;
+            case 11:
+              echo "Month $x: $calendar[$x] has n days";
+              break;
+          }
+
+          echo "<br>";
+        }
       ?>
     </div>
     </main>
