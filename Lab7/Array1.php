@@ -42,9 +42,10 @@ include("Footer.php");
         {
           echo "Month: $month";
           echo "<br>";
-          echo "<br>";
-          echo "<br>";
         }
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
       ?>
 
       <h1>While loop, SWITCH statement</h1>
