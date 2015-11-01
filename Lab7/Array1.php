@@ -96,6 +96,7 @@ include("Footer.php");
           }
 
           echo "<br>";
+          $x++;
         }
       ?>
     </div>
