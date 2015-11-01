@@ -35,6 +35,21 @@ include("Footer.php");
       echo "<br>";
       print_r($calendar);
       ?>
+
+      <h1>FOREACH loop</h1>
+      <?php
+        foreach ($calendar as &$month)
+        {
+          echo "Month: $month";
+          echo "<br>";
+          echo "<br>";
+          echo "<br>";
+        }
+      ?>
+
+      <h1>While loop, SWITCH statement</h1>
+      <?php
+      ?>
     </div>
     </main>
   </body>
