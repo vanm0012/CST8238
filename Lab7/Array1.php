@@ -25,7 +25,8 @@ include("Footer.php");
       <?php
       for ($x=0; $x<count($calendar); $x++)
       {
-        echo "Month $x: $calendar[$x]";
+        $num = $x+1;
+        echo "Month $num: $calendar[$x]";
         echo "<br>";
       }
 
