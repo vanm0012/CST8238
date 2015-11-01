@@ -40,7 +40,8 @@ include("Footer.php");
       <?php
         foreach ($calendar as &$month)
         {
-          echo "Month array_search($month, $calendar): $month";
+          $num = array_search($month, $calendar)+1;
+          echo "Month $num: $month";
           echo "<br>";
         }
         echo "<br>";
