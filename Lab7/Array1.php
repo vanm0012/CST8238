@@ -26,6 +26,7 @@ include("Footer.php");
       for ($x=0; $x<count($calendar); $x++)
       {
         echo "Month $x: $calendar($x)";
+        echo "<br>";
       }
       ?>
     </div>
