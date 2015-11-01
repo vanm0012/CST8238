@@ -30,6 +30,9 @@ include("Footer.php");
       }
 
       sort($calendar);
+      echo "<br>";
+      echo "<br>";
+      echo "<br>";
       print_r($calendar);
       ?>
     </div>
