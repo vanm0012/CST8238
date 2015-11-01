@@ -1608,9 +1608,10 @@ ul.none
   list-style-type: none;
 }
 
-ol
+ol li
 {
   list-style-type: lower-roman;
+  margin-left: 20px;
 }
 
 ol .upper
