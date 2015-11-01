@@ -52,6 +52,7 @@ include("Footer.php");
 
       <h1>WHILE loop, SWITCH statement</h1>
       <?php
+        $calendar = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
         $x = 0;
         while ($x < 11)
         {
@@ -88,10 +89,10 @@ include("Footer.php");
               echo "Month $x: $calendar[$x] has 30 days";
               break;
             case 10:
-              echo "Month $x: $calendar[$x] has 330 days";
+              echo "Month $x: $calendar[$x] has 30 days";
               break;
             case 11:
-              echo "Month $x: $calendar[$x] has n days";
+              echo "Month $x: $calendar[$x] has 31 days";
               break;
           }
 
