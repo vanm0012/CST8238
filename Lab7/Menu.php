@@ -10,6 +10,9 @@ function _menu()
         <li>
           <a href="Array2.php">Array 2</a>
         </li>
+        <li>
+          <a href="Objects.php">Objects</a>
+        </li>
       </ul>
     </aside>
   ';
