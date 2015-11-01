@@ -17,7 +17,7 @@ include("Footer.php");
     <main>
       <?php _menu(); ?>
       <div class="center">
-      <ol>
+      <ol class="bold">
         <li>What is the difference between a numeric and associative array?
           <p>A numeric array uses indexs, which are numeric of course, and values are accessed by #array[index].
           Associative arrays use keys and function like a dictionary. Values are accessed by $array['key']</p>
