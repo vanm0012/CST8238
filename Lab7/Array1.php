@@ -18,7 +18,8 @@ include("Footer.php");
       <?php _menu(); ?>
       <div class="center">
       <?php
-
+        $calendar = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        print_r($calendar);
       ?>
     </div>
     </main>
