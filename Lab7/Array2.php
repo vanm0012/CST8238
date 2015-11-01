@@ -34,7 +34,7 @@ include("Footer.php");
           <p>To create a multidimensional array in PHP, you would create an array of arrays.
           For example: $array = array(array(1,2,3), array("a","b","c"), array("i","ii","iii")).</p>
         </li>
-        <li><b>How can you determine the number of elements there are in an array?
+        <li><b>How can you determine the number of elements there are in an array?</b>
           <p>count($array) will return a count of items in an array in PHP.</p>
         </li>
         <li><b>What is the purpose of the explode function?</b>
