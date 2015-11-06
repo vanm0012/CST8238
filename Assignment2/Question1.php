@@ -23,7 +23,7 @@ include("Footer.php");
     /* For loop : left aligned */
     $x = 11;
 
-    while ($x>1)
+    while ($x>=1)
     {
       echo str_repeat("*", $x);
       echo "<br>";
