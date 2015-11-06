@@ -25,7 +25,7 @@ include("Footer.php");
 
     while ($x>1)
     {
-      str_repeat("*", $x);
+      echo str_repeat("*", $x);
       $x--;
     }
 
