@@ -10,6 +10,7 @@ include("Footer.php");
     <meta name="author" content="tryton-vanmeer">
     <title>Assignment 2</title>
     <link href="css/Stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="css/octicons.css" rel="stylesheet" type="text/css">
   </head>
   <body>
