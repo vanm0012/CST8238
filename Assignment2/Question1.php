@@ -28,7 +28,9 @@ include("Footer.php");
       echo "<br>";
     }
 
-    /* while loop : right aligned
+    echo str_repeat("<br>", 5);
+
+    /* while loop : right aligned */
     $x = 11;
 
     while ($x>=1)
@@ -36,7 +38,7 @@ include("Footer.php");
       echo str_repeat("*", $x);
       echo "<br>";
       $x--;
-    } */
+    }
 
     /* do-while loop : diamond */
 
