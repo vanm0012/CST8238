@@ -20,6 +20,20 @@ include("Footer.php");
       <div class="center content">
     <?php
 
+    /* For loop : left aligned */
+    $x = 11;
+
+    while ($x>1)
+    {
+      echo "*" * $x;
+      $x--;
+    }
+
+    /* do-while loop : right aligned */
+
+
+    /* do-while loop : diamond */
+
     ?>
       </div>
     </main>
