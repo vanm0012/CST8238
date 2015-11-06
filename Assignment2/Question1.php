@@ -24,7 +24,6 @@ include("Footer.php");
     /* For loop : left aligned */
     for ($x = 11; $x>=1; $x--)
     {
-      echo str_repeat("&nbsp;", 11-$x);
       echo str_repeat("*", $x);
       echo "<br>";
     }
@@ -36,6 +35,7 @@ include("Footer.php");
 
     while ($x>=1)
     {
+      echo str_repeat("&nbsp;", 11-$x);
       echo str_repeat("*", $x);
       echo "<br>";
       $x--;
