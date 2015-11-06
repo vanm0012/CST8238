@@ -49,6 +49,7 @@ include("Footer.php");
       echo str_repeat("&nbsp;", 6-$a);
       echo str_repeat("*", $a);
       echo "<br>";
+      $a++;
     } while ($a <= 6);
 
     ?>
