@@ -45,12 +45,14 @@ include("Footer.php");
 
     /* do-while loop : diamond */
     $a = 1;
+    $b = 5;
     do {
-      echo str_repeat("&nbsp;", 6-$a);
+      echo str_repeat("&nbsp;", $b);
       echo str_repeat("*", $a);
       echo "<br>";
       $a++;
       $a++;
+      $b--;
     } while ($a < 12);
 
     ?>
