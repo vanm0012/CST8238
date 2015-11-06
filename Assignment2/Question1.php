@@ -17,7 +17,9 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="content">
+      <div class="center">
+        <div class="content">
+
     <?php
 
     /* For loop : left aligned */
@@ -40,7 +42,9 @@ include("Footer.php");
     /* do-while loop : diamond */
 
     ?>
+    
       </div>
+    </div>
     </main>
   </body>
   <?php _footer(); ?>
