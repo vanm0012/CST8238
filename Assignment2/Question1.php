@@ -17,7 +17,7 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="center content">
+      <div class="content">
     <?php
 
     /* For loop : left aligned */
