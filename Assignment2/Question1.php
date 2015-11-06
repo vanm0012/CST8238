@@ -21,6 +21,13 @@ include("Footer.php");
     <?php
 
     /* For loop : left aligned */
+    for ($x = 11; $x>=1; $x--)
+    {
+      echo str_repeat("*", $x);
+      echo "<br>";
+    }
+
+    /* while loop : right aligned
     $x = 11;
 
     while ($x>=1)
@@ -28,10 +35,7 @@ include("Footer.php");
       echo str_repeat("*", $x);
       echo "<br>";
       $x--;
-    }
-
-    /* do-while loop : right aligned */
-
+    } */
 
     /* do-while loop : diamond */
 
