@@ -50,6 +50,7 @@ include("Footer.php");
       echo str_repeat("*", $a);
       echo "<br>";
       $a++;
+      $a++;
     } while ($a <= 6);
 
     ?>
