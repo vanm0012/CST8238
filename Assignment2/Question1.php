@@ -51,7 +51,7 @@ include("Footer.php");
       echo "<br>";
       $a++;
       $a++;
-    } while ($a <= 12);
+    } while ($a < 12);
 
     ?>
 
