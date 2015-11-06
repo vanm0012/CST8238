@@ -17,7 +17,6 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="center">
         <div class="content">
 
     <?php
@@ -42,9 +41,8 @@ include("Footer.php");
     /* do-while loop : diamond */
 
     ?>
-    
+
       </div>
-    </div>
     </main>
   </body>
   <?php _footer(); ?>
