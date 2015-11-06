@@ -41,11 +41,14 @@ include("Footer.php");
       $x--;
     }
 
+    echo str_repeat("<br>", 5);
+
     /* do-while loop : diamond */
     $a = 1;
     do {
       echo str_repeat("&nbsp;", 6-$a);
       echo str_repeat("*", $a);
+      echo "<br>";
     } while ($a <= 6);
 
     ?>
