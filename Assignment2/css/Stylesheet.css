@@ -1633,7 +1633,7 @@ nav
   position: relative;
   align-items: center;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
-  z-index: 30;
+  z-index: 10;
 }
 
 
@@ -1654,6 +1654,7 @@ nav
 
 .sidebar
 {
+  position: fixed;
   top: 0;
   float: right;
   box-sizing: border-box;
