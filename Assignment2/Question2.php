@@ -20,7 +20,7 @@ include("Footer.php");
       <div class="center">
     <?php
     /* For loop  to create a table */
-    echo "<table style='width:100%'>";
+    echo "<table style='width:100%' border='1'>";
 
     echo "<tr>";
 
