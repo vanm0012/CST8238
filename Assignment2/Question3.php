@@ -60,7 +60,7 @@ function find_matching($arr1, $arr2)
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="center-box">
+      <div class="center">
     <?php
     $q3_array1 = array(9, 3, 1, 0, 99, 2, 5, 6, 32, 1 ,55);
     $q3_array2 = array(9, 18, 1, 0, 23, 22, 4, 6, 5, 32, 55);
