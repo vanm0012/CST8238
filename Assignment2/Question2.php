@@ -24,7 +24,7 @@ include("Footer.php");
 
     echo "<tr>";
 
-    echo "<td> 0 </td>";
+    echo "<td bgcolor='#9e9e9e'> 0 </td>";
     echo "<td> 1 </td>";
 
     echo "</tr>";
