@@ -67,6 +67,7 @@ function find_matching($arr1, $arr2)
 
     calc_average($q3_array1);
     find_largest($q3_array1);
+    find_matching($q3_array1, $q3_array2);
     ?>
       </div>
     </main>
