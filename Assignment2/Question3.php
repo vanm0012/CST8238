@@ -29,6 +29,7 @@ function find_largest($arr)
       $arr_largest = $val;
       $y = $x;
     }
+    $x++;
   }
 
   echo "The highest value is at index: $y <br>";
