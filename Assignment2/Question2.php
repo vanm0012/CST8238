@@ -22,12 +22,14 @@ include("Footer.php");
     /* For loop  to create a table */
     echo "<table style='width:100%' border='1'>";
 
-    echo "<tr>";
-
-    echo "<td bgcolor='#9e9e9e'> 0 </td>";
-    echo "<td> 1 </td>";
-
-    echo "</tr>";
+    for($x=0; $x<10; $x=$x+2)
+    {
+      $y = $x+1;
+      echo "<tr>";
+      echo "<td bgcolor='#9e9e9e'> $x </td>";
+      echo "<td> $y </td>";
+      echo "</tr>";
+    }
 
     echo "</table>";
 
