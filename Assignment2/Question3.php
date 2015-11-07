@@ -16,6 +16,23 @@ function calc_average($arr)
 
   echo "The average is: $arr_avg <br>";
 }
+function find_largest($arr)
+{
+  $arr_largest;
+  $x = 0;
+  $y = $x;
+
+  foreach ($arr as $val)
+  {
+    if ($arr_largest < $val)
+    {
+      $arr_largest = $val;
+      $y = $x;
+    }
+  }
+
+  echo "The highest value is at index: $y <br>";
+}
 ?>
 <html>
   <head>
