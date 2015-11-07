@@ -56,7 +56,7 @@ include("Footer.php");
     } while ($a < 12);
 
     $a = 11;
-    $b = 0;
+    $b = 1;
     do {
       echo str_repeat("&nbsp;", $b);
       echo str_repeat("*", $a);
