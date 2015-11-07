@@ -1770,6 +1770,12 @@ nav
   margin: 0 auto;
 }
 
+.center-box
+{
+  width: 60%;
+  margin: 0 auto;
+}
+
 .left
 {
   text-align: left;
