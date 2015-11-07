@@ -31,7 +31,7 @@ include("Footer.php");
     echo "<br> <hr>";
     echo strlen($q4_str);
     echo "<br> <hr>";
-    echo str_split($q4_str);
+    print_r(str_split($q4_str));
     ?>
       </div>
     </main>
