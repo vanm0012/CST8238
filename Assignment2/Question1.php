@@ -35,7 +35,7 @@ include("Footer.php");
 
     while ($x>=1)
     {
-      echo str_repeat("&nbsp;", 12-$x);
+      echo str_repeat("&nbsp;", 11-$x);
       echo str_repeat("*", $x);
       echo "<br>";
       $x--;
@@ -45,7 +45,7 @@ include("Footer.php");
 
     /* do-while loop : diamond */
     $a = 1;
-    $b = 6;
+    $b = 7;
     do {
       echo str_repeat("&nbsp;", $b);
       echo str_repeat("*", $a);
