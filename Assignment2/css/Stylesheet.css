@@ -1773,7 +1773,7 @@ nav
 .center-box
 {
   width: 80%;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .left
