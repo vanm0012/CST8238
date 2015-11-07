@@ -66,7 +66,9 @@ function find_matching($arr1, $arr2)
     $q3_array2 = array(9, 18, 1, 0, 23, 22, 4, 6, 5, 32, 55);
 
     calc_average($q3_array1);
+    echo "<hr>";
     find_largest($q3_array1);
+    echo "<hr>";
     find_matching($q3_array1, $q3_array2);
     ?>
       </div>
