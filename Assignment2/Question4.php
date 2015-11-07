@@ -26,8 +26,11 @@ include("Footer.php");
     $q4_str = "This is a test";
 
     echo strtoupper($q4_str);
+    echo "<br> <hr>";
     echo strtolower($q4_str);
+    echo "<br> <hr>";
     echo strlen($q4_str);
+    echo "<br> <hr>";
     echo str_split($q4_str);
     ?>
       </div>
