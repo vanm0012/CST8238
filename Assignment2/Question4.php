@@ -17,9 +17,18 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="center-box">
+      <div class="center">
     <?php
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
 
+    $q4_str = "This is a test";
+
+    echo strtoupper($q4_str);
+    echo strtolower($q4_str);
+    echo strlen($q4_str);
+    echo str_split($q4_str);
     ?>
       </div>
     </main>
