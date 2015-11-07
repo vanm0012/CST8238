@@ -17,7 +17,7 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-        <div class="content-box">
+        <div class="center-box">
 
     <?php
 
