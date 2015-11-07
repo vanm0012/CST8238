@@ -34,6 +34,18 @@ function find_largest($arr)
 
   echo "The highest value is at index: $y <br>";
 }
+function find_matching($arr1, $arr2)
+{
+  $curr_index = 0;
+  foreach ($arr1 as $val)
+  {
+    if ($arr2[$curr_index] == $val)
+    {
+      echo "The values at $curr_index match. <br>";
+    }
+    $curr_index++;
+  }
+}
 ?>
 <html>
   <head>
