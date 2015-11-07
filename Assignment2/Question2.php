@@ -17,8 +17,19 @@ include("Footer.php");
     <?php _header(); ?>
     <main>
       <?php _menu(); ?>
-      <div class="center-box">
+      <div class="center">
     <?php
+    /* For loop  to create a table */
+    echo "<table style='width:100%'>";
+
+    echo "<tr>";
+
+    echo "<td> 0 </td>";
+    echo "<td> 1 </td>";
+
+    echo "</tr>";
+
+    echo "</table>";
 
     ?>
       </div>
