@@ -35,7 +35,7 @@ include("Footer.php");
 
     while ($x>=1)
     {
-      echo str_repeat("&nbsp;", 11-$x);
+      echo str_repeat("&nbsp;", 12-$x);
       echo str_repeat("*", $x);
       echo "<br>";
       $x--;
