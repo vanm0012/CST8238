@@ -53,6 +53,7 @@ function find_largest($arr)
     $q3_array2 = array(9, 18, 1, 0, 23, 22, 4, 6, 5, 32, 55);
 
     calc_average($q3_array1);
+    find_largest($q3_array1);
     ?>
       </div>
     </main>
