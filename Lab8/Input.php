@@ -44,8 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         /* Text Boxes */
         echo '<div class="input-group">';
-        echo '<label for="fname">First Name</label>';
         echo '<input required type="text" name="fname">';
+        echo '<label for="fname">First Name</label>';
         echo '</div>';
 
         echo '<input required type="text" name="lname" placeholder="Last Name">';
