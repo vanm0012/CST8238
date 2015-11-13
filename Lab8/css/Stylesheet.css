@@ -1789,13 +1789,13 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 
 .option-label
 {
-  display: block;
+  display: inline-block;
   width: 150px;
 }
 
 input[type='radio']
 {
-  float: right; 
+  float: left;
 }
 
 /****************************************************
