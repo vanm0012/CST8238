@@ -1657,6 +1657,27 @@ input[type="text"]:invalid, input[type="tel"]:invalid
   border-bottom: solid 2px #d50000 !important;
 }
 
+input[type=submit]
+{
+  cursor: pointer;
+  color: inherit;
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+input[type=submit]:hover
+{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Radio Style*/
+
 .radio {
   display: inline-block;
   padding-right: 20px;
@@ -1714,25 +1735,6 @@ input[type="text"]:invalid, input[type="tel"]:invalid
   border-radius: 50%;
   background-color: #f08b3b;
   opacity: 0;
-}
-
-input[type=submit]
-{
-  cursor: pointer;
-  color: inherit;
-  border: 0;
-  font-style: normal;
-  font-size: inherit;
-  text-transform: inherit;
-  background: none;
-  padding: 5px 5px 5px 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-}
-
-input[type=submit]:hover
-{
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /****************************************************
