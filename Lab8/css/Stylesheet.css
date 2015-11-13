@@ -1744,7 +1744,7 @@ input:valid ~ label
   z-index: 1000;
 }
 
-radio::after
+.radio::after
 {
   border-radius: 50%;
 }
@@ -1754,7 +1754,7 @@ radio::after
   background: #9faab7;
 }
 
-radio:checked::before
+.radio:checked::before
 {
   width: 40px;
   height: 40px;
