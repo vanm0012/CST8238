@@ -109,7 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo 'Position: ', $radio;
         echo '<br>';
-        echo 'Games: ', $games;
+        echo 'Games: ';
+        print_r($games);
 
         echo '</div>';
 
