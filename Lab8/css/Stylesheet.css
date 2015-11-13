@@ -1626,7 +1626,7 @@ ol .upper
 / Input Styles
 /****************************************************/
 
-input[type="text"], input[type="tel"]
+input
 {
   padding: 10px;
   display: block;
@@ -1641,21 +1641,23 @@ input[type="text"], input[type="tel"]
   border-radius: none;
 }
 
-input[type="text"]:focus, input[type="tel"]:focus
+input:focus
 {
   outline: none;
   border-bottom: solid 2px #757575;
 }
 
-input[type="text"]:valid, input[type="tel"]:valid
+input:valid
 {
   border-bottom: solid 2px #00c853 !important;
 }
 
-input[type="text"]:invalid, input[type="tel"]:invalid
+input:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
+
+/* Submit Buttom Style*/
 
 input[type=submit]
 {
@@ -1676,7 +1678,20 @@ input[type=submit]:hover
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Radio Style*/
+/* Label Style */
+label
+{
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
 
 
 /****************************************************
