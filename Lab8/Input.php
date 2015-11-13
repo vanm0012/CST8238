@@ -21,8 +21,8 @@ include("Footer.php");
         <?php
 
         echo '<div style="float:left; width:50%;">';
-        echo '<input class="validation" min="1" type="text" name="fname" placeholder="First Name">';
-        echo '<input class="validation" min="1" type="text" name="lname" placeholder="Last Name">';
+        echo '<input min="1" type="text" name="fname" placeholder="First Name">';
+        echo '<input min="1" type="text" name="lname" placeholder="Last Name">';
         echo '</div>';
 
         echo '<div style="float:right; width:50%;">';
