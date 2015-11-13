@@ -12,7 +12,7 @@ function test_input($data)
   return $data;
 }
 
-$fname = $lname = $pnum = $radio = "";
+$fname = $lname = $pnum = $radio $games = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $lname = test_input($_POST["lname"]);
   $pnum = test_input($_POST["pnum"]);
   $radio = test_input($_POST["radio"]);
+  $games = test_input($_POST["games"]);
 }
 ?>
 
@@ -80,13 +81,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '</div>';
 
+
+
         /* Multiple Select Box */
+        echo '<div class="input group">';
         echo '<select name="games" multiple>';
         echo '<option value="">Option 1</option>';
         echo '<option value="">Option 2</option>';
         echo '<option value="">Option 3</option>';
         echo '<option value="">Option 4</option>';
         echo '</select>';
+        echo '</div>';
 
         /* Submit and Close Form */
         echo '<br>';
