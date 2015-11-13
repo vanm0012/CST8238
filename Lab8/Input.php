@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
-        echo '<input required type="tel" name="pnum" placeholder="Last Name">';
+        echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
 
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
