@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '</form>';
         echo '</div>';
 
-        echo '<div class="post-text" style="float:right; width:50%;">';
+        echo '<div style="float:right; width:50%; font-size: 20px;">';
 
         echo 'First Name: ', $fname;
         echo '<br>';
