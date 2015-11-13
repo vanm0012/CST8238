@@ -80,6 +80,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '</div>';
 
+        /* Multiple Select Box */
+        echo '<select name="games" multiple>';
+        echo '<option value="">Option 1</option>';
+        echo '<option value="">Option 2</option>';
+        echo '<option value="">Option 3</option>';
+        echo '<option value="">Option 4</option>';
+        echo '</select>';
+
         /* Submit and Close Form */
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
