@@ -1659,6 +1659,7 @@ input[type="text"]:invalid
 
 input[type=submit]
 {
+  color: inherit;
   border: 0;
   font-style: normal;
   font-size: inherit;
