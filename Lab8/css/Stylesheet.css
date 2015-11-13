@@ -1689,7 +1689,7 @@ input[type=submit]:hover
 }
 
 /* Label Style */
-.fancy-label label
+label
 {
   color: #9e9e9e;
   font-size: 18px;
@@ -1703,13 +1703,13 @@ input[type=submit]:hover
   -webkit-transition: 0.2s ease all;
 }
 
-.fancy-label input:focus ~ label
+input:focus ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #9e9e9e;
 }
-.fancy-label input:valid ~ label
+input:valid ~ label
 {
   top: -20px;
   font-size: 14px;
