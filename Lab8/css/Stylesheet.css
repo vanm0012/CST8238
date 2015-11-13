@@ -1716,9 +1716,9 @@ input:valid ~ label
   color: #00c853;
 }
 
-/* Radio Buttons */
+/* Radio and Checkbox Buttons */
 
-.radio
+.option-input
 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1740,21 +1740,20 @@ input:valid ~ label
   outline: none;
   position: relative;
   margin-right: 0.5rem;
-  border-radius: 50%;
   z-index: 1000;
 }
 
-.radio::after
-{
-  border-radius: 50%;
-}
-
-.radio:hover
+.option-input:hover
 {
   background: #9faab7;
 }
 
-.radio:checked::before
+.option-input:checked
+{
+  background: #40e0d0;
+}
+
+.option-input:checked::before
 {
   width: 40px;
   height: 40px;
@@ -1766,13 +1765,26 @@ input:valid ~ label
   line-height: 40px;
 }
 
-.radio:checked::after
+.option-input:checked::after
 {
+  /*-webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;*/
   background: #40e0d0;
   content: '';
   display: block;
   position: relative;
   z-index: 100;
+}
+
+.option-input.radio
+{
+  border-radius: 50%;
+}
+
+.option-input.radio::after
+{
+  border-radius: 50%;
 }
 
 /****************************************************
