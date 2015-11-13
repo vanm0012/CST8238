@@ -61,12 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
 
         /* Radio Buttons */
-        echo '<div class="card">';
         echo '<label class="radio">';
-        echo '<input type="radio" name="radio" value="Staff" checked>';
-        echo '<span class="outer"><span class="inner"></span></span>Staff';
+        echo '<input type="radio" name="radio" value="Staff" checked> Staff';
         echo '</label>';
-        echo '</div>';
 
         echo '<br>';
         echo '<input type="radio" name="radio" value="Student"> Student';
