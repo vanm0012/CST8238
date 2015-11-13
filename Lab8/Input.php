@@ -110,12 +110,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo 'Position: ', $radio;
         echo '<br>';
         echo 'Games: ';
+        echo '<ul>';
         foreach ($games as $game)
         {
-          echo $game;
-          echo "<br>";
-          str_repeat('&nbsp;', 5);
+          echo '<li>', $game, '</li>';
         }
+        echo '</ul>';
 
         echo '</div>';
 
