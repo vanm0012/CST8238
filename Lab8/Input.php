@@ -3,6 +3,22 @@
 include("Header.php");
 include("Menu.php");
 include("Footer.php");
+
+function test_input($data)
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+$fname = $lname = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+  $fname = test_input($_POST["fname"]);
+  $lname = test_input($_POST["lname"]);
+}
 ?>
 
 <html>
@@ -21,12 +37,20 @@ include("Footer.php");
         <?php
 
         echo '<div style="float:left; width:50%;">';
+        echo '<form method="post">';
+
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
+
+        echo '</form>';
         echo '</div>';
 
         echo '<div style="float:right; width:50%;">';
-        echo 'First Name | Last Name';
+
+        echo 'First Name: ', $fname;
+        echo '<br>';
+        echo 'Last Name: ', $lname;
+
         echo '</div>';
 
         ?>
