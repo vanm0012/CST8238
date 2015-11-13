@@ -1655,17 +1655,16 @@ input
 input:focus
 {
   outline: none;
-  border-bottom: solid 2px #757575;
+}
+
+input:focus, input:invalid
+{
+  border-bottom: solid 2px #d50000 !important;
 }
 
 input:valid
 {
   border-bottom: solid 2px #00c853 !important;
-}
-
-input:invalid
-{
-  border-bottom: solid 2px #d50000 !important;
 }
 
 /* Submit Buttom Style*/
