@@ -1657,6 +1657,15 @@ input[type="text"]:invalid
   border-bottom: solid 2px #d50000 !important;
 }
 
+input[type=submit]
+{
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+
 /****************************************************
 / Text Style for Lab 8
 /****************************************************/
