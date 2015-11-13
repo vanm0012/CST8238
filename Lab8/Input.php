@@ -12,7 +12,7 @@ function test_input($data)
   return $data;
 }
 
-$fname = $lname = $pnum = $radio $games = "";
+$fname = $lname = $pnum = $radio = $games = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
