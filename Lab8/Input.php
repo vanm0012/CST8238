@@ -22,6 +22,10 @@ include("Footer.php");
         echo '<input type="text" name="fname" placeholder="First Name">';
         echo '<input type="text" name="lname" placeholder="Last Name">';
 
+        echo '<aside>';
+        echo 'First Name | Last Name';
+        echo '</aside>';
+
         ?>
     </div>
     </main>
