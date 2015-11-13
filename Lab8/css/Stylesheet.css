@@ -1623,6 +1623,26 @@ ol .upper
 }
 
 /****************************************************
+/ Input Styles
+/****************************************************/
+
+input[type="text"]
+{
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input[type="text"]:focus
+{
+  outline: none;
+}
+
+/****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
 
