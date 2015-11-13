@@ -18,7 +18,11 @@ include("Footer.php");
     <?php _menu(); ?>
     <main>
       <div class="center">
+        <?php
+        $fname = 'First Name';
+        echo '<input type="text" name="fname" value="'.$fname.'">';
 
+        ?>
     </div>
     </main>
   </body>
