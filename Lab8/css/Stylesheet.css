@@ -1628,18 +1628,23 @@ ol .upper
 
 input[type="text"]
 {
+  padding: 10px;
   display: block;
   margin: 0;
   width: 100%;
   font-size: 18px;
   appearance: none;
   box-shadow: none;
+  border: none;
+  border-bottom: solid 2px #e0e0e0;
+  transition: border 0.3s;
   border-radius: none;
 }
 
 input[type="text"]:focus
 {
   outline: none;
+  border-bottom: solid 2px #757575;
 }
 
 /****************************************************
