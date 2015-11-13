@@ -81,15 +81,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '</div>';
 
-
-
+        echo '<br>';
+        echo '<br>';
         /* Multiple Select Box */
         echo '<div class="input group">';
         echo '<select name="games" multiple>';
-        echo '<option value="">Option 1</option>';
-        echo '<option value="">Option 2</option>';
-        echo '<option value="">Option 3</option>';
-        echo '<option value="">Option 4</option>';
+        echo '<option value="Besiege">Besiege</option>';
+        echo '<option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>';
+        echo '<option value="Hotline Miami">Hotline Miami</option>';
+        echo '<option value="Middle-Earth: Shadow of Mordor">Middle-Earth: Shadow of Mordor</option>';
         echo '</select>';
         echo '</div>';
 
@@ -108,6 +108,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo 'Phone Number: ', $pnum;
         echo '<br>';
         echo 'Position: ', $radio;
+        echo '<br>';
+        echo 'Games: ', $games;
 
         echo '</div>';
 
