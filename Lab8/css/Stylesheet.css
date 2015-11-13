@@ -1690,7 +1690,6 @@ input[type=submit]:hover
 }
 
 /* Label Style */
-
 label
 {
   color: #9e9e9e;
@@ -1718,14 +1717,7 @@ input:valid ~ label
   color: #00c853;
 }
 
-
-/****************************************************
-/ Text Style for Lab 8
-/****************************************************/
-.post-text
-{
-  font-size: 20px;
-}
+/* Radio Buttons */
 
 /****************************************************
 / Nav Bar and Banner [Header]
