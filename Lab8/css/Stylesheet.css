@@ -1647,7 +1647,7 @@ input
   appearance: none;
   box-shadow: none;
   border: none;
-  border-bottom: solid 2px #e0e0e0;
+  border-bottom: solid 2px #9e9e9e;
   transition: border 0.3s;
   border-radius: none;
 }
