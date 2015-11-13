@@ -19,8 +19,8 @@ include("Footer.php");
     <main>
       <div class="center">
         <?php
-        $fname = 'First Name';
-        echo '<input type="text" name="fname" value="'.$fname.'">';
+        echo '<input type="text" name="fname" placeholder="First Name">';
+        echo '<input type="text" name="lname" placeholder="Last Name">';
 
         ?>
     </div>
