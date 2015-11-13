@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo 'Phone Number: ', $pnum;
         echo '<br>';
-        echo 'Radio: ', $radio;
+        echo 'Position: ', $radio;
 
         echo '</div>';
 
