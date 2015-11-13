@@ -45,17 +45,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         /* Text Boxes */
         echo '<div class="input-group">';
         echo '<input required type="text" name="fname">';
-        echo '<label class="fancy-label" for="fname">First Name</label>';
+        echo '<label for="fname">First Name</label>';
         echo '</div>';
 
         echo '<div class="input-group">';
         echo '<input required type="text" name="lname">';
-        echo '<label class="fancy-label" for="fname">Last Name</label>';
+        echo '<label for="fname">Last Name</label>';
         echo '</div>';
 
         echo '<div class="input-group">';
         echo '<input required type="tel" name="pnum">';
-        echo '<label class="fancy-label" for="fname">Phone Number</label>';
+        echo '<label for="fname">Phone Number</label>';
         echo '</div>';
 
         echo '<br>';
