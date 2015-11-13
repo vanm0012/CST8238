@@ -1613,6 +1613,14 @@ span
 ul.none
 {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+ul.none li
+{
+  padding: 0;
+  margin: 0;
 }
 
 ol li
