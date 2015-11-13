@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $lname = test_input($_POST["lname"]);
   $pnum = test_input($_POST["pnum"]);
   $radio = test_input($_POST["radio"]);
-  $games = test_input($_POST["games"]);
+  $games = $_POST["games"];
 }
 ?>
 
