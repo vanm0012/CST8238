@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         /* Multiple Select Box */
         echo '<div class="input group">';
-        echo '<select name="games" multiple>';
+        echo '<select name="games[]" multiple>';
         echo '<option value="Besiege">Besiege</option>';
         echo '<option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>';
         echo '<option value="Hotline Miami">Hotline Miami</option>';
