@@ -1705,11 +1705,17 @@ label
   -webkit-transition: 0.2s ease all;
 }
 
-input:focus ~ label, input:valid ~ label
+input:focus ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #9e9e9e;
+}
+input:valid ~ label
+{
+  top: -20px;
+  font-size: 14px;
+  color: #00c853;
 }
 
 
