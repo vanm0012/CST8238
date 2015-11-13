@@ -72,12 +72,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '</li>';
 
         echo '<li>';
+        echo '<label class="option-label">';
         echo '<input class="option-input radio" type="radio" name="radio" value="Student"> Student';
         echo '</label>';
         echo '<br>';
         echo '</li>';
 
         echo '<li>';
+        echo '<label class="option-label">';
         echo '<input class="option-input radio" type="radio" name="radio" value="Faculty"> Faculty';
         echo '</label>';
         echo '<br>';
