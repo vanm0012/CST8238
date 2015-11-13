@@ -42,9 +42,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<form method="post">';
 
         /* Text Boxes */
+        echo '<div class="input-group">';
         echo '<label for="fname">First Name</label>';
         echo '<input required type="text" name="fname">';
+        echo '</div>';
+
         echo '<input required type="text" name="lname" placeholder="Last Name">';
+
         echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
 
         /* Radio Buttons */
