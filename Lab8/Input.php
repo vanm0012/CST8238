@@ -42,6 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
 
+        echo '<br>';
+        echo '<input type="submit" value="Submit">';
         echo '</form>';
         echo '</div>';
 
