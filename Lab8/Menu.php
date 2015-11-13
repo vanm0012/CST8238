@@ -14,7 +14,7 @@ function _menu()
             <a href="Session2.php">Session 2</a>
         </li>
       </ul>
-    </aside>
+    </div>
   ';
 }
 ?>
