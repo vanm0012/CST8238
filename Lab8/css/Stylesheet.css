@@ -1788,11 +1788,8 @@ input:valid ~ label
   opacity: 0;
 }
 
-.card {
-  -webkit-animation: cardEnter 0.75s ease-in-out 0.5s;
-  animation: cardEnter 0.75s ease-in-out 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.card
+{
   max-width: 250px;
   padding: 20px;
   background-color: #fff;
