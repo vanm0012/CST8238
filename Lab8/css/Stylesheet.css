@@ -1647,7 +1647,7 @@ input
   appearance: none;
   box-shadow: none;
   border: none;
-  border-bottom: solid 2px #e0e0e0;
+  border-bottom: solid 2px #e0e0e0 !important;
   transition: border 0.3s;
   border-radius: none;
 }
@@ -1659,7 +1659,7 @@ input:focus
 
 input:focus, input:invalid
 {
-  border-bottom: solid 2px #d50000 !important;
+  border-bottom: solid 2px #d50000;
 }
 
 input:valid
