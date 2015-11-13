@@ -1718,6 +1718,15 @@ input:valid ~ label
 
 /* Radio Buttons */
 
+.radio-label
+{
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 49px;
+  cursor: pointer;
+}
+
 /****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
