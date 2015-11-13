@@ -1721,7 +1721,7 @@ input:valid ~ label
 .radio
 {
   -webkit-appearance: none;
-  -moz-appearance: none
+  -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
