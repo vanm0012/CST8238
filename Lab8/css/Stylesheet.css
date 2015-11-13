@@ -1647,7 +1647,7 @@ input
   appearance: none;
   box-shadow: none;
   border: none;
-  border-bottom: solid 2px #e0e0e0 !important;
+  border-bottom: solid 2px #e0e0e0;
   transition: border 0.3s;
   border-radius: none;
 }
@@ -1657,7 +1657,7 @@ input:focus
   outline: none;
 }
 
-input:focus, input:invalid
+input:focus:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
