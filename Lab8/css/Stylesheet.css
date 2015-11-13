@@ -1787,6 +1787,17 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   border-radius: 50%;
 }
 
+.option-label
+{
+  display: block;
+  width: 150px;
+}
+
+input[type='radio']
+{
+  float: right; 
+}
+
 /****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
