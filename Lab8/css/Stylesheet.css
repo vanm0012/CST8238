@@ -1631,7 +1631,7 @@ input[type="text"]
   padding: 10px;
   display: block;
   margin: 0;
-  width: 100%;
+  width: 0;
   font-size: 18px;
   appearance: none;
   box-shadow: none;
@@ -1643,6 +1643,7 @@ input[type="text"]
 
 input[type="text"]:focus
 {
+  width: 100%;
   outline: none;
   border-bottom: solid 2px #757575;
 }
