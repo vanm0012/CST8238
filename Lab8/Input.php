@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
 
         /* Radio Buttons */
-        echo '<div class="input-group">';
+        echo '<div class="input-group-radio">';
         echo '<ul>';
 
         echo '<li>';
