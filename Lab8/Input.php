@@ -12,13 +12,14 @@ function test_input($data)
   return $data;
 }
 
-$fname = $lname = $pnum = "";
+$fname = $lname = $pnum = $radio = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
   $fname = test_input($_POST["fname"]);
   $lname = test_input($_POST["lname"]);
   $pnum = test_input($_POST["pnum"]);
+  $radio = test_input($_POST["radio"]);
 }
 ?>
 
@@ -43,6 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
         echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
+        echo '<input type="radio" name="radio" value="Staff" checked> Staff';
+        echo '<input type="radio" name="radio" value="Student" checked> Student';
+        echo '<input type="radio" name="radio" value="Faculty" checked> Faculty';
 
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
@@ -56,6 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo 'Last Name: ', $lname;
         echo '<br>';
         echo 'Phone Number: ', $pnum;
+        echo '<br>';
+        echo 'Radio: ', $radio;
 
         echo '</div>';
 
