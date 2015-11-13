@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input required type="text" name="lname" placeholder="Last Name">';
 
         echo '<br>';
-        echo '<input class="teal accent-4" type="submit" value="Submit">';
+        echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
         echo '</div>';
 
