@@ -1637,7 +1637,7 @@ ol .upper
   margin-bottom:45px;
 }
 
-input
+.text-input input
 {
   padding: 10px;
   display: block;
@@ -1652,17 +1652,17 @@ input
   border-radius: none;
 }
 
-input:focus
+.text-input input:focus
 {
   outline: none;
 }
 
-input:focus:invalid
+.text-input input:focus:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
 
-input:valid
+.text-input input:valid
 {
   border-bottom: solid 2px #00c853 !important;
 }
@@ -1689,7 +1689,7 @@ input[type=submit]:hover
 }
 
 /* Label Style */
-label
+.fancy-label label
 {
   color: #9e9e9e;
   font-size: 18px;
@@ -1703,13 +1703,13 @@ label
   -webkit-transition: 0.2s ease all;
 }
 
-input:focus ~ label
+.fancy-label input:focus ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #9e9e9e;
 }
-input:valid ~ label
+.fancy-label input:valid ~ label
 {
   top: -20px;
   font-size: 14px;
@@ -1717,11 +1717,6 @@ input:valid ~ label
 }
 
 /* Radio and Checkbox Buttons */
-
-.option-label label
-{
-  
-}
 
 .option-input
 {
