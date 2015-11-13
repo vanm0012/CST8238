@@ -1652,6 +1652,11 @@ input[type="text"]:valid
   border-bottom: solid 2px #00c853 !important;
 }
 
+input[type="text"]:invalid
+{
+  border-bottom: solid 2px #d50000 !important;
+}
+
 /****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
