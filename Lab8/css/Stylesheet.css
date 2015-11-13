@@ -1613,15 +1613,6 @@ span
 ul
 {
   list-style-type: none;
-  display: table;
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-ul li
-{
-  display: table-row;
 }
 
 ol li
@@ -1644,6 +1635,13 @@ ol .upper
 {
   position:relative;
   margin-bottom:45px;
+}
+
+.input-group-radio
+{
+  position:relative;
+  margin-bottom:45px;
+  padding-left: 50%;
 }
 
 input[type="text"], input[type="tel"]
