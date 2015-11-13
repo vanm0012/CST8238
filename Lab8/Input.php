@@ -52,6 +52,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
 
+        echo '<br>';
+        
         /* Radio Buttons */
         echo '<input type="radio" name="radio" value="Staff" checked> Staff';
         echo '<br>';
