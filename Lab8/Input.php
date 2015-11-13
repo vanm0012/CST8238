@@ -48,12 +48,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<label for="fname">First Name</label>';
         echo '</div>';
 
-        echo '<input required type="text" name="lname" placeholder="Last Name">';
+        echo '<div class="input-group">';
+        echo '<label for="fname">Last Name</label>';
+        echo '<input required type="text" name="lname">';
+        echo '</div>';
 
-        echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
+        echo '<div class="input-group">';
+        echo '<label for="fname">Phone Number</label>';
+        echo '<input required type="tel" name="pnum">';
+        echo '</div>';
 
         echo '<br>';
-        
+
         /* Radio Buttons */
         echo '<input type="radio" name="radio" value="Staff" checked> Staff';
         echo '<br>';
