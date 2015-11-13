@@ -1647,7 +1647,7 @@ input[type="text"]:focus
   border-bottom: solid 2px #757575;
 }
 
-input[type="text"]:valid
+.validation input[type="text"]:valid
 {
   border-bottom: solid 2px #00c853;
 }
