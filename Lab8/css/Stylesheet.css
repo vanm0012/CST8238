@@ -1718,6 +1718,11 @@ input:valid ~ label
 
 /* Radio and Checkbox Buttons */
 
+.option-label label
+{
+  
+}
+
 .option-input
 {
   -webkit-appearance: none;
