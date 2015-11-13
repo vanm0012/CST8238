@@ -1665,6 +1665,12 @@ input[type=submit]
   font-size: inherit;
   text-transform: inherit;
   background: none;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]:focus
+{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /****************************************************
