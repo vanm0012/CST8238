@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input type="radio" name="radio" value="Student"> Student';
         echo '<br>';
         echo '<input type="radio" name="radio" value="Faculty"> Faculty';
+        echo '<br>';
 
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
