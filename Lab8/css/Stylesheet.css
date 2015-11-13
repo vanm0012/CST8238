@@ -1659,7 +1659,7 @@ input:focus
 
 input:focus, input:invalid
 {
-  border-bottom: solid 2px #d50000;
+  border-bottom: solid 2px #d50000 !important;
 }
 
 input:valid
