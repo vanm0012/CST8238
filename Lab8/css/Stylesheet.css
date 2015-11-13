@@ -1626,6 +1626,12 @@ ol .upper
 / Input Styles
 /****************************************************/
 
+.input-group
+{
+  position:relative;
+  margin-bottom:45px;
+}
+
 input
 {
   padding: 10px;
@@ -1680,6 +1686,7 @@ input[type=submit]:hover
 }
 
 /* Label Style */
+
 label
 {
   color: #e0e0e0;
