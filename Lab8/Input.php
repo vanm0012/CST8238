@@ -49,13 +49,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '</div>';
 
         echo '<div class="input-group">';
-        echo '<label for="fname">Last Name</label>';
         echo '<input required type="text" name="lname">';
+        echo '<label for="fname">Last Name</label>';
         echo '</div>';
 
         echo '<div class="input-group">';
-        echo '<label for="fname">Phone Number</label>';
         echo '<input required type="tel" name="pnum">';
+        echo '<label for="fname">Phone Number</label>';
         echo '</div>';
 
         echo '<br>';
