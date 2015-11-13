@@ -19,12 +19,15 @@ include("Footer.php");
     <main>
       <div class="center">
         <?php
+
+        echo '<div style="float:left; width:50%;">';
         echo '<input type="text" name="fname" placeholder="First Name">';
         echo '<input type="text" name="lname" placeholder="Last Name">';
+        echo '</div>';
 
-        echo '<aside>';
+        echo '<div style="float:right; width:50%;">';
         echo 'First Name | Last Name';
-        echo '</aside>';
+        echo '</div>';
 
         ?>
     </div>
