@@ -41,9 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<div style="float:left; width:50%;">';
         echo '<form method="post">';
 
-        echo '<input required type="text" name="fname" placeholder="First Name">';
+        /* Text Boxes */
+        echo '<label for="fname">First Name</label>';
+        echo '<input required type="text" name="fname">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
         echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
+
+        /* Radio Buttons */
         echo '<input type="radio" name="radio" value="Staff" checked> Staff';
         echo '<br>';
         echo '<input type="radio" name="radio" value="Student"> Student';
@@ -51,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input type="radio" name="radio" value="Faculty"> Faculty';
         echo '<br>';
 
+        /* Submit and Close Form */
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
