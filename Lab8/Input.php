@@ -12,12 +12,13 @@ function test_input($data)
   return $data;
 }
 
-$fname = $lname = "";
+$fname = $lname = $pnum = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
   $fname = test_input($_POST["fname"]);
   $lname = test_input($_POST["lname"]);
+  $pnum = test_input($_POST["pnum"]);
 }
 ?>
 
@@ -41,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
+        echo '<input required type="tel" name="pnum" placeholder="Last Name">';
 
         echo '<br>';
         echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
@@ -52,6 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo 'First Name: ', $fname;
         echo '<br>';
         echo 'Last Name: ', $lname;
+        echo '<br>';
+        echo 'Phone Number: ', $pnum;
 
         echo '</div>';
 
