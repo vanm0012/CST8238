@@ -1619,11 +1619,7 @@ ol li
 
 ol .upper
 {
-  list-style-type: upper-roman;
-}
-
-/****************************************************
-/ Input Styles
+  list-style-type: upper-roman;validation
 /****************************************************/
 
 input[type="text"]
@@ -1649,7 +1645,7 @@ input[type="text"]:focus
 
 .validation input[type="text"]:valid
 {
-  border-bottom: solid 2px #00c853;
+  border-bottom: solid 2px #00c853 !important;
 }
 
 /****************************************************
