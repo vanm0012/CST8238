@@ -1610,14 +1610,14 @@ span
   display:block;
 }
 
-ul.none
+ul
 {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
-ul.none li
+ul li
 {
   padding: 0;
   margin: 0;
