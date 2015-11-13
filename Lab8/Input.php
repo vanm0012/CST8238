@@ -44,10 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<input required type="text" name="fname" placeholder="First Name">';
         echo '<input required type="text" name="lname" placeholder="Last Name">';
         echo '<input required type="tel" name="pnum" placeholder="Phone Number">';
-        echo '<label class="radio">';
-        echo '<input type="radio" name="radio" value="Staff" checked>';
-        echo '<span class="outer"><span class="inner"></span></span>Staff';
-        echo '</label>';
+        echo '<input type="radio" name="radio" value="Staff" checked> Staff';
         echo '<br>';
         echo '<input type="radio" name="radio" value="Student" checked> Student';
         echo '<br>';
