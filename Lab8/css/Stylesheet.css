@@ -1665,7 +1665,9 @@ input[type=submit]
   font-size: inherit;
   text-transform: inherit;
   background: none;
+  padding: 5px 5px 5px 5px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
 input[type=submit]:hover
