@@ -1637,6 +1637,11 @@ ol .upper
   margin-bottom:45px;
 }
 
+.input-group-radio
+{
+  position:relative;
+}
+
 input[type="text"], input[type="tel"]
 {
   padding: 10px;
