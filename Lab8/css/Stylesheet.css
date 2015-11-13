@@ -1637,7 +1637,7 @@ ol .upper
   margin-bottom:45px;
 }
 
-.text-input input
+input
 {
   padding: 10px;
   display: block;
@@ -1652,17 +1652,17 @@ ol .upper
   border-radius: none;
 }
 
-.text-input input:focus
+input:focus
 {
   outline: none;
 }
 
-.text-input input:focus:invalid
+input:focus:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
 
-.text-input input:valid
+input:valid
 {
   border-bottom: solid 2px #00c853 !important;
 }
