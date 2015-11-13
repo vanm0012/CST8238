@@ -109,7 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo 'Position: ', $radio;
         echo '<br>';
-        echo 'Games: ';
+        echo '<br>';
+        echo '<span style="text-decoration: underline;">Games</span>';
         echo '<ul>';
         foreach ($games as $game)
         {
