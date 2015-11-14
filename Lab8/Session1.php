@@ -94,7 +94,7 @@ include("Footer.php");
 
         /* Submit and Close Form */
         echo '<br>';
-        echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
+        echo '<input class="teal accent-4 white-text" type="submit" value="Submit" onclick="location.href = \'Session2.php\';">';
         echo '</form>';
         echo '</div>';
 
