@@ -1718,7 +1718,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 
 /* Radio and Checkbox Buttons */
 
-.option-input.checkbox, .option-input.radio
+input[type="checkbox"], input[type="radio"]
 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1743,17 +1743,17 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   z-index: 1000;
 }
 
-.option-input.checkbox:hover, .option-input.radio:hover
+input[type="checkbox"]:hover, input[type="radio"]:hover
 {
   background: #9faab7;
 }
 
-.option-input.checkbox:checked, .option-input.radio:checked
+input[type="checkbox"]:checked, input[type="radio"]:checked
 {
   background: #40e0d0;
 }
 
-.option-input.radio:checked::before
+input[type="radio"]:checked::before
 {
   width: 20px;
   height: 20px;
@@ -1765,7 +1765,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   line-height: 20px;
 }
 
-.option-input.checkbox:checked::before
+input[type="checkbox"]:checked::before
 {
   width: 20px;
   height: 20px;
@@ -1777,7 +1777,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   line-height: 20px;
 }
 
-.option-input.checkbox:checked::after, .option-input.radio:checked::after
+input[type="checkbox"]:checked::after, input[type="radio"]:checked::after
 {
   background: #00b8d4;
   content: '';
@@ -1786,12 +1786,13 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   z-index: 100;
 }
 
-.option-input.radio
+input[type="radio"]
 {
   border-radius: 50%;
+  float: left;
 }
 
-.option-input.radio::after
+input[type="radio"]::after
 {
   border-radius: 50%;
 }
@@ -1802,10 +1803,6 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   width: 150px;
 }
 
-input[type='radio']
-{
-  float: left;
-}
 
 
 /* Select box */
