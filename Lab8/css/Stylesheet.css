@@ -1717,6 +1717,11 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   color: #00c853;
 }
 
+input[type="tel"]:invalid
+{
+  z-index: -1;
+}
+
 /* Radio and Checkbox Buttons */
 
 .option-input
