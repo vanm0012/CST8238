@@ -1634,6 +1634,7 @@ ol .upper
 
 .input-group
 {
+  widht: 50%;
   position:relative;
   margin-bottom:45px;
 }
@@ -1967,7 +1968,7 @@ nav
 {
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .left
