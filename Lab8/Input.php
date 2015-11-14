@@ -65,17 +65,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<div class="input-group">';
 
         echo '<label class="option-label">';
-        echo '<input type="radio" name="radio" value="Staff" checked> Staff';
+        echo '<input class="option-input" type="radio" name="radio" value="Staff" checked> Staff';
         echo '</label>';
         echo '<br>';
 
         echo '<label class="option-label">';
-        echo '<input type="radio" name="radio" value="Student"> Student';
+        echo '<input class="option-input" type="radio" name="radio" value="Student"> Student';
         echo '</label>';
         echo '<br>';
 
         echo '<label class="option-label">';
-        echo '<input type="radio" name="radio" value="Faculty"> Faculty';
+        echo '<input class="option-input" type="radio" name="radio" value="Faculty"> Faculty';
         echo '</label>';
         echo '<br>';
 
@@ -96,15 +96,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<div class="input-group">';
 
         echo '<label class="option-label">';
-        echo '<input type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '<label class="option-label">';
-        echo '<input type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '<label class="option-label">';
-        echo '<input type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '</div>';
