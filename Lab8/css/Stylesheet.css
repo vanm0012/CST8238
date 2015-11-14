@@ -1721,14 +1721,14 @@ input[type="tel"]:focus:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
-  color: #9e9e9e;
+  color: #d50000;
 }
 
 input[type="tel"]:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
-  color: #d50000;
+  color: #9e9e9e;
 }
 
 /* Radio and Checkbox Buttons */
