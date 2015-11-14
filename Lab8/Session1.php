@@ -22,6 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $_SESSION['pnum'] = test_input($_POST["pnum"]);
   $_SESSION['radio'] = test_input($_POST["radio"]);
   $_SESSION['games'] = $_POST["games"];
+  header('Location: Session2.php');
+  exit();
 }
 ?>
 
@@ -114,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         /* Submit and Close Form */
         echo '<br>';
-        echo '<input class="teal accent-4 white-text" type="submit" value="Submit" onclick="location.href = \'Session2.php\';">';
+        echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
         echo '</div>';
 
