@@ -1718,7 +1718,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 
 /* Radio and Checkbox Buttons */
 
-input[type="checkbox"], input[type="radio"]
+.option
 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1743,12 +1743,12 @@ input[type="checkbox"], input[type="radio"]
   z-index: 1000;
 }
 
-input[type="checkbox"]:hover, input[type="radio"]:hover
+.option-input:hover
 {
   background: #9faab7;
 }
 
-input[type="checkbox"]:checked, input[type="radio"]:checked
+.option-input:checked
 {
   background: #40e0d0;
 }
@@ -1777,7 +1777,7 @@ input[type="checkbox"]:checked::before
   line-height: 20px;
 }
 
-input[type="checkbox"]:checked::after, input[type="radio"]:checked::after
+.option-input:checked::after
 {
   background: #00b8d4;
   content: '';
@@ -1786,13 +1786,13 @@ input[type="checkbox"]:checked::after, input[type="radio"]:checked::after
   z-index: 100;
 }
 
-input[type="radio"]
+.option-input.radio
 {
   border-radius: 50%;
   float: left;
 }
 
-input[type="radio"]::after
+.option-input::after
 {
   border-radius: 50%;
 }
@@ -1802,7 +1802,6 @@ input[type="radio"]::after
   display: inline-block;
   width: 150px;
 }
-
 
 
 /* Select box */
