@@ -24,21 +24,25 @@ include("Footer.php");
         echo '<form method="post">';
 
         /* Text Boxes */
-        echo '<div class="input-group center">';
-        echo '<input class="short" required type="text" name="fname">';
+        echo '<div class="center" style="width:50%;">';
+
+        echo '<div class="input-group">';
+        echo '<input required type="text" name="fname">';
         echo '<label for="fname">First Name</label>';
         echo '</div>';
 
-        echo '<div class="input-group center">';
-        echo '<input class="short" required type="text" name="lname">';
+        echo '<div class="input-group">';
+        echo '<input required type="text" name="lname">';
         echo '<label for="fname">Last Name</label>';
         echo '</div>';
 
-        echo '<div class="input-group center">';
-        echo '<input class="short" required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="pnum">';
+        echo '<div class="input-group">';
+        echo '<input required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="pnum">';
         echo '<label for="fname">Phone Number (###-###-####)</label>';
         echo '</div>';
 
+
+        echo '</div>';
         echo '<br>';
 
         /* Radio Buttons */
