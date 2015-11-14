@@ -85,33 +85,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
 
         echo '<div class="input-group">';
-        echo '<select multiple>';
 
-        echo '<option>';
         echo '<label class="option-label">';
         echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
-        echo '</option>';
+        echo '<br>';
 
-        echo '<option>';
         echo '<label class="option-label">';
         echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Counter Strike: Global Offensive"> Counter Strike: Global Offensive';
         echo '</label>';
-        echo '</option>';
+        echo '<br>';
 
-        echo '<option>';
         echo '<label class="option-label">';
         echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Hotline Miami"> Hotline Miami';
         echo '</label>';
-        echo '</option>';
+        echo '<br>';
 
-        echo '<option>';
         echo '<label class="option-label">';
         echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Middle-Earth: Shadow of Mordor"> Middle-Earth: Shadow of Mordor';
         echo '</label>';
-        echo '</option>';
+        echo '<br>';
 
-        echo '</select>';
         echo '</div>';
 
         /* Submit and Close Form */
