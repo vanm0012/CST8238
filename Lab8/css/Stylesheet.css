@@ -1741,6 +1741,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   position: relative;
   margin-right: 20px;
   z-index: 1000;
+  float: left;
 }
 
 .option-input:hover
@@ -1789,7 +1790,6 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 .option-input.radio
 {
   border-radius: 50%;
-  float: left;
 }
 
 .option-input::after
@@ -1800,7 +1800,8 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 .option-label
 {
   display: inline-block;
-  width: 150px;
+  width: 200px;
+  padding-bottom: 10px;
 }
 
 /****************************************************
