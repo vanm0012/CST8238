@@ -1718,7 +1718,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 
 /* Radio and Checkbox Buttons */
 
-.option
+.option-input
 {
   -webkit-appearance: none;
   -moz-appearance: none;
