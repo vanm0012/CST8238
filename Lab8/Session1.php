@@ -24,7 +24,7 @@ include("Footer.php");
         echo '<form method="post">';
 
         /* Text Boxes */
-        echo '<div style="width:50%; margin-left: auto;">';
+        echo '<div style="width:50%; margin-left: auto; display: inline-block;">';
 
         echo '<div class="input-group">';
         echo '<input required type="text" name="fname">';
