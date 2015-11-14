@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '</div>';
 
         echo '<div class="input-group">';
-        echo '<input required type="tel" name="pnum">';
+        echo '<input required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" onblur="addHyphen()" name="pnum">';
         echo '<label for="fname">Phone Number</label>';
         echo '</div>';
 
@@ -140,4 +140,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     </main>
   </body>
   <?php _footer(); ?>
+  <script src="js/scripts.js"></script>
 </html>
