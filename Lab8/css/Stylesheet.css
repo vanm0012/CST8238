@@ -1753,7 +1753,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   background: #40e0d0;
 }
 
-.option-input input[type="radio"]:checked::before
+.option-input:checked::before
 {
   width: 20px;
   height: 20px;
@@ -1765,7 +1765,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   line-height: 20px;
 }
 
-.option-input input[type="checkbox"]:checked::before
+.option-input.radio:checked::before
 {
   width: 20px;
   height: 20px;
@@ -1777,7 +1777,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   line-height: 20px;
 }
 
-.option-input:checked::after
+.option-input.checkbox:checked::after
 {
   /*-webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
