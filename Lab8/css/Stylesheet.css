@@ -1658,7 +1658,7 @@ input[type="text"]:focus, input[type="tel"]:focus
   outline: none;
 }
 
-input[type="text"]:focus:invalid, input[type="tel"]:focus:invalid
+input[type="text"]:focus:invalid, input[type="tel"]:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
