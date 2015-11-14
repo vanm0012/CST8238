@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 include("Header.php");
@@ -22,11 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $_SESSION["pnum"] = test_input($_POST["pnum"]);
   $_SESSION["radio"] = test_input($_POST["radio"]);
   $_SESSION["games"] = $_POST["games"];
-  header('Location: Session2.php');
+  header('Location: ./Session2.php');
   exit();
 }
 ?>
 
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">

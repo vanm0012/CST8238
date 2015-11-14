@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 include("Header.php");
@@ -6,6 +5,7 @@ include("Menu.php");
 include("Footer.php");
 ?>
 
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
