@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<div class="input-group">';
         echo '<input required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="pnum">';
-        echo '<label for="fname">Phone Number</label>';
+        echo '<label for="fname">Phone Number (###-###-####)</label>';
         echo '</div>';
 
         echo '<br>';
