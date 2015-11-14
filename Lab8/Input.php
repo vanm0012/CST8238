@@ -96,15 +96,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<div class="input-group">';
 
         echo '<label class="option-label">';
-        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '<label class="option-label">';
-        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '<label class="option-label">';
-        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
 
         echo '</div>';
