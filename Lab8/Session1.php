@@ -19,7 +19,82 @@ include("Footer.php");
     <?php _menu(); ?>
     <main>
       <div class="center">
+        <?php
 
+        echo '<form method="post">';
+
+        /* Text Boxes */
+        echo '<div class="input-group">';
+        echo '<input required type="text" name="fname">';
+        echo '<label for="fname">First Name</label>';
+        echo '</div>';
+
+        echo '<div class="input-group">';
+        echo '<input required type="text" name="lname">';
+        echo '<label for="fname">Last Name</label>';
+        echo '</div>';
+
+        echo '<div class="input-group">';
+        echo '<input required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="pnum">';
+        echo '<label for="fname">Phone Number (###-###-####)</label>';
+        echo '</div>';
+
+        echo '<br>';
+
+        /* Radio Buttons */
+        echo '<div class="input-group">';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input radio" type="radio" name="radio" value="Staff" checked> Staff';
+        echo '</label>';
+        echo '<br>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input radio" type="radio" name="radio" value="Student"> Student';
+        echo '</label>';
+        echo '<br>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input radio" type="radio" name="radio" value="Faculty"> Faculty';
+        echo '</label>';
+        echo '<br>';
+
+        echo '</div>';
+
+        echo '<br>';
+        echo '<br>';
+
+        echo '<div class="input-group">';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '</label>';
+        echo '<br>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Counter Strike: Global Offensive"> Counter Strike: Global Offensive';
+        echo '</label>';
+        echo '<br>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Hotline Miami"> Hotline Miami';
+        echo '</label>';
+        echo '<br>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Middle-Earth: Shadow of Mordor"> Middle-Earth: Shadow of Mordor';
+        echo '</label>';
+        echo '<br>';
+
+        echo '</div>';
+
+        /* Submit and Close Form */
+        echo '<br>';
+        echo '<input class="teal accent-4 white-text" type="submit" value="Submit">';
+        echo '</form>';
+        echo '</div>';
+
+        ?>
     </div>
     </main>
   </body>
