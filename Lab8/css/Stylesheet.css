@@ -1803,9 +1803,6 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   width: 150px;
 }
 
-
-/* Select box */
-
 /****************************************************
 / Nav Bar and Banner [Header]
 /****************************************************/
