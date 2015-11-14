@@ -1717,7 +1717,7 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   color: #00c853;
 }
 
-input[type="tel"]:invalid
+input[type="tel"]:invalid ~ label
 {
   z-index: -1;
 }
