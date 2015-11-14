@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <?php
+session_start();
 include("Header.php");
 include("Menu.php");
 include("Footer.php");
-
-function test_input($data)
-{
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-
-$fname = $lname = $pnum = $radio = $games = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-  $fname = test_input($_POST["fname"]);
-  $lname = test_input($_POST["lname"]);
-  $pnum = test_input($_POST["pnum"]);
-  $radio = test_input($_POST["radio"]);
-  $games = $_POST["games"];
-}
 ?>
 
 <html>
@@ -41,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
       <?php
       echo '<div style="width:50%; margin-left: auto; display: inline-block; font-size: 20px;">';
 
-      echo 'First Name: ', $fname;
+      echo 'First Name: ', $_SESSION['fname'];
       echo '<br>';
-      echo 'Last Name: ', $lname;
+      echo 'Last Name: ', $_SESSION['lname'];
       echo '<br>';
-      echo 'Phone Number: ', $pnum;
+      echo 'Phone Number: ',$_SESSION['$pnum'];
       echo '<br>';
-      echo 'Position: ', $radio;
+      echo 'Position: ', $_SESSION['radio'];
       echo '<br>';
       echo '<br>';
       echo '<span style="text-decoration: underline;">Games</span>';
       echo '<ul>';
-      foreach ($games as $game)
+      foreach ($_SESSION['games'] as $game)
       {
         echo '<li>', $game, '</li>';
       }
