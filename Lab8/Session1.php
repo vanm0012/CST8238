@@ -13,15 +13,15 @@ function test_input($data)
   return $data;
 }
 
-$_SESSION['fname'] = $_SESSION['lname'] = $_SESSION['pnum'] = $_SESSION['radio'] = $_SESSION['games'] = "";
+$_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["radio"] = $_SESSION["games"] = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-  $_SESSION['fname'] = test_input($_POST["fname"]);
-  $_SESSION['lname'] = test_input($_POST["lname"]);
-  $_SESSION['pnum'] = test_input($_POST["pnum"]);
-  $_SESSION['radio'] = test_input($_POST["radio"]);
-  $_SESSION['games'] = $_POST["games"];
+  $_SESSION["fname"] = test_input($_POST["fname"]);
+  $_SESSION["lname"] = test_input($_POST["lname"]);
+  $_SESSION["pnum"] = test_input($_POST["pnum"]);
+  $_SESSION["radio"] = test_input($_POST["radio"]);
+  $_SESSION["games"] = $_POST["games"];
   header('Location: Session2.php');
   exit();
 }

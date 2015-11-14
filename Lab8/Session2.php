@@ -27,7 +27,7 @@ include("Footer.php");
       echo '<br>';
       echo 'Last Name: ', $_SESSION['lname'];
       echo '<br>';
-      echo 'Phone Number: ',$_SESSION['$pnum'];
+      echo 'Phone Number: ',$_SESSION['pnum'];
       echo '<br>';
       echo 'Position: ', $_SESSION['radio'];
       echo '<br>';
