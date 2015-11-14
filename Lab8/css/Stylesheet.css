@@ -1719,7 +1719,9 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
 
 input[type="tel"]:invalid ~ label
 {
-  z-index: -1;
+  top: -20px;
+  font-size: 14px;
+  color: #d50000;
 }
 
 /* Radio and Checkbox Buttons */
