@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
 
         echo '<div class="input-group">';
-        echo '<select>';
+        echo '<select multiple>';
 
         echo '<option>';
         echo '<label class="option-label">';
