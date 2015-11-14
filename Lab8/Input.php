@@ -83,30 +83,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<br>';
         echo '<br>';
-        /* Multiple Select Box
-        echo '<div class="input group">';
-        echo '<select name="games[]" multiple>';
-        echo '<option value="Besiege">Besiege</option>';
-        echo '<option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>';
-        echo '<option value="Hotline Miami">Hotline Miami</option>';
-        echo '<option value="Middle-Earth: Shadow of Mordor">Middle-Earth: Shadow of Mordor</option>';
-        echo '</select>';
-        echo '</div>';*/
 
         echo '<div class="input-group">';
+        echo '<select>';
 
+        echo '<option>';
         echo '<label class="option-label">';
         echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
         echo '</label>';
+        echo '</option>';
 
+        echo '<option>';
         echo '<label class="option-label">';
-        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Counter Strike: Global Offensive"> Counter Strike: Global Offensive';
         echo '</label>';
+        echo '</option>';
 
+        echo '<option>';
         echo '<label class="option-label">';
-        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Hotline Miami"> Hotline Miami';
         echo '</label>';
+        echo '</option>';
 
+        echo '<option>';
+        echo '<label class="option-label">';
+        echo '<input class="option-input checkbox" type="checkbox" name="games[]" value="Middle-Earth: Shadow of Mordor"> Middle-Earth: Shadow of Mordor';
+        echo '</label>';
+        echo '</option>';
+
+        echo '</select>';
         echo '</div>';
 
         /* Submit and Close Form */
