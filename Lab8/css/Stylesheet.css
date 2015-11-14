@@ -1753,12 +1753,24 @@ input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
   background: #40e0d0;
 }
 
-.option-input:checked::before
+.option-input.radio:checked::before
 {
   width: 20px;
   height: 20px;
   position: absolute;
   content: '\2716';
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.option-input.checkbox:checked::before
+{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: '\2713';
   display: inline-block;
   font-size: 10px;
   text-align: center;
