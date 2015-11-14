@@ -24,17 +24,17 @@ include("Footer.php");
         echo '<form method="post">';
 
         /* Text Boxes */
-        echo '<div class="input-group">';
+        echo '<div class="input-group center">';
         echo '<input required type="text" name="fname">';
         echo '<label for="fname">First Name</label>';
         echo '</div>';
 
-        echo '<div class="input-group">';
+        echo '<div class="input-group center">';
         echo '<input required type="text" name="lname">';
         echo '<label for="fname">Last Name</label>';
         echo '</div>';
 
-        echo '<div class="input-group">';
+        echo '<div class="input-group center">';
         echo '<input required type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="pnum">';
         echo '<label for="fname">Phone Number (###-###-####)</label>';
         echo '</div>';
