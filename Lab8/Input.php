@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
 
         /* Radio Buttons */
-        echo '<div class="input-group-radio">';
+        echo '<div class="input-group">';
 
         echo '<label class="option-label">';
         echo '<input class="option-input radio" type="radio" name="radio" value="Staff" checked> Staff';
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<br>';
         echo '<br>';
-        /* Multiple Select Box */
+        /* Multiple Select Box
         echo '<div class="input group">';
         echo '<select name="games[]" multiple>';
         echo '<option value="Besiege">Besiege</option>';
@@ -91,6 +91,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<option value="Hotline Miami">Hotline Miami</option>';
         echo '<option value="Middle-Earth: Shadow of Mordor">Middle-Earth: Shadow of Mordor</option>';
         echo '</select>';
+        echo '</div>';*/
+
+        echo '<div class="input-group">';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '</label>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '</label>';
+
+        echo '<label class="option-label">';
+        echo '<input class="option-input" type="checkbox" name="games[]" value="Besiege"> Besiege';
+        echo '</label>';
+
         echo '</div>';
 
         /* Submit and Close Form */
