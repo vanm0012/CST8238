@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         echo '<div class="input-group">';
         echo '<input required maxlength="255" type="email" name="email">';
-        echo '<label for="email"></label>';
+        echo '<label for="email">Email</label>';
         echo '</div>';
 
         echo '<div class="input-group">';
@@ -72,13 +72,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '</div>';
 
         echo '<div class="input-group">';
-        echo '<input required maxlength="11" type="number" name="snum">';
-        echo '<label for="snum"></label>';
+        echo '<input required maxlength="11" type="text" name="snum">';
+        echo '<label for="snum">Social Insurance Number</label>';
         echo '</div>';
 
         echo '<div class="input-group">';
         echo '<input required maxlength="60" type="password" name="pass">';
-        echo '<label for="pass"></label>';
+        echo '<label for="pass">Password</label>';
         echo '</div>';
 
         echo '<br>';
