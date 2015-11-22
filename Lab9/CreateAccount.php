@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         /* Submit and Close Form */
         echo '<br>';
-        echo '<input class="yellow accent-4 white-text" type="submit" value="Submit">';
+        echo '<input class="orange accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
         echo '</div>';
         ?>
