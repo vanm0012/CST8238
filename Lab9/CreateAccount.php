@@ -2,7 +2,6 @@
 <?php
 session_start();
 include("Header.php");
-include("Menu.php");
 include("Footer.php");
 
 function test_input($data)
@@ -42,7 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   </head>
   <body>
     <?php _header(); ?>
-    <?php _menu(); ?>
     <main>
       <div class="center">
         <?php
