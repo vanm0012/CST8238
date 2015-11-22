@@ -1695,7 +1695,8 @@ input[type=submit]:hover
 }
 
 /* Label Style */
-input[type="text"] + label, input[type="tel"] + label
+input[type="text"] + label, input[type="tel"] + label,
+input[type="password"] + label, input[type="email"] + label
 {
   color: #9e9e9e;
   font-size: 18px;
@@ -1709,13 +1710,15 @@ input[type="text"] + label, input[type="tel"] + label
   -webkit-transition: 0.2s ease all;
 }
 
-input[type="text"]:focus ~ label, input[type="tel"]:focus ~ label
+input[type="text"]:focus ~ label, input[type="tel"]:focus ~ label,
+input[type="password"]:focus ~ label, input[type="email"]:focus ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #9e9e9e;
 }
-input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label
+input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label,
+input[type="password"]:valid + label, input[type="email"]:valid ~ label
 {
   top: -20px;
   font-size: 14px;
