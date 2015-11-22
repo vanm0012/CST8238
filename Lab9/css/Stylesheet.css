@@ -1639,7 +1639,8 @@ ol .upper
   margin-bottom:45px;
 }
 
-input[type="text"], input[type="tel"]
+input[type="text"], input[type="tel"], input[type="password"],
+input[type="email"]
 {
   padding: 10px;
   display: block;
@@ -1654,17 +1655,20 @@ input[type="text"], input[type="tel"]
   border-radius: none;
 }
 
-input[type="text"]:focus, input[type="tel"]:focus
+input[type="text"]:focus, input[type="tel"]:focus,
+input[type="password"]:focus, input[type="email"]:focus
 {
   outline: none;
 }
 
-input[type="text"]:focus:invalid, input[type="tel"]:focus:invalid
+input[type="text"]:focus:invalid, input[type="tel"]:focus:invalid,
+input[type="password"]:focus:invalid, input[type="email"]:focus:invalid
 {
   border-bottom: solid 2px #d50000 !important;
 }
 
-input[type="text"]:valid, input[type="tel"]:valid
+input[type="text"]:valid, input[type="tel"]:valid,
+input[type="password"]:valid, input[type="email"]:valid
 {
   border-bottom: solid 2px #00c853 !important;
 }
