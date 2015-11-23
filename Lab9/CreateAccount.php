@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $_SESSION["pass"] = test_input($_POST["pass"]);
   $_SESSION["email"] = test_input($_POST["email"]);
 
-  $message = _SESSION["fname"] + " " + _SESSION["lname"];
+  $message = $_SESSION["fname"] + " " + $_SESSION["lname"];
 
   echo "<script type='text/javascript'>alert('$message');</script>";
   /*header('Location: ./.php');*/
