@@ -35,8 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   if (! $conn)
   {
-    $msg = "Connection Failed: " . $conn->connect_error;
-    echo "<script type='text/javascript'>alert('$msg');</script>";
+    die("Connection Failed: " . $conn->connect_error);
   }
 
   $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
@@ -51,8 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   }
   else
   {
-    $msg = "Error: " . $sql . " " . $conn->error;
-    echo "<script type='text/javascript'>alert('$msg');</script>";
+    die("Error: " . $sql . " " . $conn->error);
   }
 
   mysql_close($conn);
