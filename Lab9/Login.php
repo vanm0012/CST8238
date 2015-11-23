@@ -17,6 +17,9 @@ $username = 'vanm0012_Lab9';
 $password = 'vanm0012';
 $database = 'vanm0012_Lab9';
 
+$invalid_login = FALSE;
+$valid_login = FALSE;
+
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -24,7 +27,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $_SESSION["email"] = $email = test_input($_POST["email"]);
   $_SESSION["pass"] = $pass = test_input($_POST["pass"]);
 
-  header('Location: ./ViewAllAccounts.php');
+  /* DATABASE CHECK */
+  $conn = mysqli_connect($host, $username, $password, $database);
+
+  if ($conn == FALSE)
+  {
+    die("Connection Failed: " . mysqli_connect_error());
+  }
+
+  $sql =  "SELECT * FROM persons WHERE (email = '$email')";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_assoc($result);
+
+  if ($row["email"] != $email)
+  {
+    $invalid_login = TRUE;
+  }
+
+  mysqli_close($conn);
+
+  /*header('Location: ./ViewAllAccounts.php');*/
 }
 ?>
 
@@ -63,6 +85,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo '<input class="orange accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
+        if (!invalid_login)
+        {
+          echo '<span class="red-text">Invalid Email/Password</span>';
+        }
         echo '</div>';
         ?>
     </div>
