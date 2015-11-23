@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     echo 'CONNECTION ERROR';
   }
 
-  $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
+  $sql = "INSERT INTO persons (first_name, last_name, email, telephone, sin, pass_hash) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
 
   mysql_select_db($database);
   $retval = mysql_query($sql, $conn);
