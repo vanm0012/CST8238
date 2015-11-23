@@ -2,7 +2,6 @@
 <?php
 session_start();
 include("Header.php");
-include("Menu.php");
 include("Footer.php");
 
 function test_input($data)
@@ -51,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<div class="input-group">';
         echo '<input required maxlength="255" type="email" name="email">';
         echo '<label for="email">Email</label>';
+        echo '</div>';
 
         echo '<div class="input-group">';
         echo '<input required maxlength="60" type="password" name="pass">';
