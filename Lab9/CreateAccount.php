@@ -44,20 +44,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   mysql_select_db($database);
   $retval = mysql_query($sql, $conn);
 
-  if ($retval)
-  {
-    $msg = "New Record created successfully";
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-  }
-  else
+  if ($retval == FALSE)
   {
     die("Error: " . $sql . "<br>" . mysqli_error($conn));
     echo 'SQL ERROR';
   }
 
   mysql_close($conn);
-
- header('Location: ./ViewAllAccounts.php');
+  header('Location: ./ViewAllAccounts.php');
 }
 ?>
 
