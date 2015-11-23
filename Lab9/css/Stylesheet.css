@@ -1628,18 +1628,6 @@ ol .upper
   list-style-type: upper-roman;
 }
 
-header
-{
-  float: left;
-  padding-left: 10%;
-}
-
-nav
-{
-  float: right;
-  padding-right: 10%;
-}
-
 
 /****************************************************
 / Input Styles
@@ -1650,6 +1638,12 @@ nav
   height: 75px;
   position: relative;
   align-items: center;
+}
+
+.header-top nav, .header-top header
+{
+  float: right;
+  padding-right: 10%;
 }
 
 
