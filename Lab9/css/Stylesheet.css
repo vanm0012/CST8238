@@ -1644,6 +1644,8 @@ ol .upper
 {
   float: right;
   padding-right: 10%;
+  align-items: center;
+  line-height: 75px;
 }
 
 .header h1
@@ -1736,28 +1738,29 @@ input[type="password"] + label, input[type="email"] + label
 }
 
 input[type="text"]:focus ~ label, input[type="tel"]:focus ~ label,
-input[type="password"]:focus ~ label, input[type="email"]:focus ~ label
+input[type="password"]:focus ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #9e9e9e;
 }
 input[type="text"]:valid ~ label, input[type="tel"]:valid ~ label,
-input[type="password"]:valid + label, input[type="email"]:valid ~ label
+input[type="password"]:valid + label
 {
   top: -20px;
   font-size: 14px;
   color: #00c853;
 }
 
-input[type="tel"]:focus:invalid ~ label
+input[type="tel"]:focus:invalid ~ label,
+input[type="email"]:focus:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
   color: #d50000;
 }
 
-input[type="tel"]:invalid ~ label
+input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
