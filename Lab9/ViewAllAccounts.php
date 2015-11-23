@@ -12,6 +12,11 @@ function test_input($data)
   return $data;
 }
 
+if ($_SESSION["valid_login"] == False)
+{
+  header('Location: ./Login.php');
+}
+
 $host = 'localhost';
 $username = 'vanm0012_Lab9';
 $password = 'vanm0012';
