@@ -12,21 +12,40 @@ function test_input($data)
   return $data;
 }
 
+$host = 'localhost';
+$username = 'vanm0012_Lab9';
+$password = 'vanm0012';
+$database = 'vanm0012_Lab9';
+
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-  $_SESSION["fname"] = test_input($_POST["fname"]);
-  $_SESSION["lname"] = test_input($_POST["lname"]);
-  $_SESSION["pnum"] = test_input($_POST["pnum"]);
-  $_SESSION["snum"] = test_input($_POST["snum"]);
-  $_SESSION["pass"] = test_input($_POST["pass"]);
-  $_SESSION["email"] = test_input($_POST["email"]);
+  $_SESSION["fname"] = $fname = test_input($_POST["fname"]);
+  $_SESSION["lname"] = $lname = test_input($_POST["lname"]);
+  $_SESSION["pnum"] = $pnum = test_input($_POST["pnum"]);
+  $_SESSION["snum"] = $snum = test_input($_POST["snum"]);
+  $_SESSION["pass"] = $pass = test_input($_POST["pass"]);
+  $_SESSION["email"] = $email = test_input($_POST["email"]);
 
-  $hashed_pass = password_hash($_POST["pass"], PASSWORD_DEFAULT);
+  $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
 
-  echo "<script type='text/javascript'>alert('$hashed_pass');</script>";
-  /*header('Location: ./.php');*/
+  /* DATABASE UPDATE */
+  $conn = new mysqli($host, $username, $password, $database);
+  if ($conn->connection_error)
+  {
+    $msg = die("Connection Failed: " . $conn->connect_error);
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+  }
+
+  $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
+
+  if ($conn->query($sql) ==TRUE)
+  {
+
+  }
+
+  /*header('Location: ./ViewAllAccounts.php');*/
 }
 ?>
 
