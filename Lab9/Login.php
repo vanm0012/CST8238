@@ -18,7 +18,7 @@ $password = 'vanm0012';
 $database = 'vanm0012_Lab9';
 
 $invalid_login = False;
-$valid_login = False;
+$_SESSION["valid_login"] = False;
 
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   {
     if (password_verify($pass, $row["pass_hash"]))
     {
-      $valid_login = True;
+      $_SESSION["valid_login"] = True;
     }
     else
     {
@@ -98,7 +98,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         /* Submit and Close Form */
         echo '<br>';
-        echo '<input class="orange accent-4 white-text" type="submit" value="Submit">';
+        echo '<input class="orange accent-4 white-text" type="submit" value="Login">';
+        echo '<input class="orange accent-3 white-text" type="button" value="Create Account" onClick="document.location.href="./CreateAccount.php"/>';
+
         echo '</form>';
         if ($invalid_login)
         {
