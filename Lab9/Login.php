@@ -46,12 +46,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   }
   else if ($row["email"] == $email)
   {
-
+    if (password_verify($pass, $row["pass_hash"]))
+    {
+      $valid_login = True;
+    }
+    else
+    {
+      $invalid_login = True;
+    }
   }
 
   mysqli_close($conn);
 
-  /*header('Location: ./ViewAllAccounts.php');*/
+  if ($valid_login)
+  {
+    header('Location: ./ViewAllAccounts.php');
+  }
 }
 ?>
 
