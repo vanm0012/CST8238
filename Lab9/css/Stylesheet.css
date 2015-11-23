@@ -1930,7 +1930,7 @@ input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
   position: relative;
   height: 30px;
   margin: 3px 10px 1px;
-  padding: 5px 30px 5px 30px;
+  padding: 30px 5px 30px 5px;
 }
 
 .menu li:hover
