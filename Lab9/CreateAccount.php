@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   if (! $conn)
   {
     die("Connection Failed: " . mysqli_connect_error());
+    echo 'CONNECTION ERROR';
   }
 
   $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
@@ -50,7 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   }
   else
   {
-    die("Error: " . $sql . " " . mysqli_error($conn));
+    die("Error: " . $sql . "<br>" . mysqli_error($conn));
+    echo 'SQL ERROR';
   }
 
   mysql_close($conn);
