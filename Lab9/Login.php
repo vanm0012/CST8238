@@ -17,7 +17,7 @@ $username = 'vanm0012_Lab9';
 $password = 'vanm0012';
 $database = 'vanm0012_Lab9';
 
-$invalid_login = True;
+$invalid_login = False;
 $valid_login = False;
 
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo '<input class="orange accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
-        if (invalid_login)
+        if ($invalid_login)
         {
           echo '<br>';
           echo '<span class="red-text">Invalid Email/Password</span>';
