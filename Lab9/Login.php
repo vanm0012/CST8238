@@ -39,9 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_assoc($result);
 
-  if ($row["email"] != $email)
+
+  if (mysqli_num_rows($result) == 0)
   {
-    $invalid_login = TRUE;
+    $invalid_login = True;
+  }
+  else if ($row["email"] == $email)
+  {
+
   }
 
   mysqli_close($conn);
