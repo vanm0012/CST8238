@@ -3,14 +3,14 @@ function _menu()
 {
   echo '
     <ul class="menu white-text">
-      <li class="yellow">
-        <a href="CreateAccount.php">Input</a>
+      <li>
+        <a href="CreateAccount.php">Create Account</a>
       </li>
-      <li class="yellow">
-        <a href="Login.php">Session 1</a>
+      <li>
+        <a href="Login.php">Login</a>
       </li>
-      <li class="yellow">
-          <a href="ViewAllAccounts.php">Session 2</a>
+      <li>
+          <a href="ViewAllAccounts.php">View All Accounts</a>
       </li>
     </ul>
   ';
