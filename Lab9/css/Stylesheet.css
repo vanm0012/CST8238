@@ -1929,13 +1929,11 @@ input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
   height: 30px;
   margin: 3px 10px 1px;
   padding: 5px 5px 5px 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
 }
 
 .menu li:hover
 {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 .menu a
