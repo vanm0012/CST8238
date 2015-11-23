@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo '<input class="orange accent-4 white-text" type="submit" value="Login">';
         echo '<br>';
-        echo '<button class="orange accent-3 white-text" type="button" value="Create Account" onClick="document.location.href="./CreateAccount.php"/>';
+        echo '<button class="orange accent-3 white-text" type="button" onClick="document.location.href="./CreateAccount.php">Create Account</button>';
 
         echo '</form>';
         if ($invalid_login)
