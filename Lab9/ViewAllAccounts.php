@@ -56,8 +56,6 @@ mysqli_close($conn);
     <main>
       <div class="center">
         <?php
-        echo '<div style="width:50%; margin-left: auto; display: inline-block; font-size: 20px;">';
-
         echo '<h1>HTML TABLE OF DATABASE</h1>';
         echo '<table>';
         echo '<tr>';
@@ -85,7 +83,6 @@ mysqli_close($conn);
           }
         }
         echo '<table>';
-        echo '</div>';
         ?>
     </div>
     </main>
