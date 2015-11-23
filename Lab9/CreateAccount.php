@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   mysql_close($conn);
 
- /*header('Location: ./ViewAllAccounts.php');*/
+ header('Location: ./ViewAllAccounts.php');
 }
 ?>
 
