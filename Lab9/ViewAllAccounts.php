@@ -82,7 +82,7 @@ mysqli_close($conn);
             echo '</tr>';
           }
         }
-        echo '<table>';
+        echo '</table>';
         ?>
     </div>
     </main>
