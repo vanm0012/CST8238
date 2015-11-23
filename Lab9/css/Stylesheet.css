@@ -1752,7 +1752,8 @@ input[type="password"]:valid + label, input[type="email"]:valid ~ label
   color: #00c853;
 }
 
-input[type="tel"]:focus:invalid ~ label
+input[type="tel"]:focus:invalid ~ label,
+input[type="email"]:focus:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
