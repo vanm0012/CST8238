@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
 
   /* DATABASE UPDATE */
-  $conn = new mysql_connect($host, $username, $password);
+  $conn = new mysqli_connect($host, $username, $password, $database);
 
   if ($conn == FALSE)
   {
@@ -40,15 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   $sql = "INSERT INTO persons (first_name, last_name, email, telephone, sin, pass_hash) VALUES('$fname', '$lname', '$email', '$pnum', '$snum', '$hashed_pass')";
 
-  mysql_select_db($database);
-  $retval = mysql_query($sql);
+  $retval = mysqli_query($conn, $sql);
 
   if ($retval == FALSE)
   {
     die("Error: " . $sql . "<br>" . mysqli_error($conn));
   }
 
-  mysql_close($conn);
+  mysqli_close($conn);
   header('Location: ./ViewAllAccounts.php');
 }
 ?>
