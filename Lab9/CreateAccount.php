@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
 
   /* DATABASE UPDATE */
-  $conn = new mysqli_connect($host, $username, $password, $database);
+  $conn = mysqli_connect($host, $username, $password, $database);
 
   if ($conn == FALSE)
   {
