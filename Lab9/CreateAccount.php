@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $_SESSION["pass"] = test_input($_POST["pass"]);
   $_SESSION["email"] = test_input($_POST["email"]);
 
-  $message = $_POST["fname"];
+  $hashed_pass = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
-  echo "<script type='text/javascript'>alert('$message');</script>";
+  echo "<script type='text/javascript'>alert('$hashed_pass');</script>";
   /*header('Location: ./.php');*/
 }
 ?>
