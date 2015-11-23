@@ -36,22 +36,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   {
     $msg = "Connection Failed: " . $conn->connect_error;
     echo "<script type='text/javascript'>alert('$msg');</script>";
-  }
 
-  $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
+    $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
 
-  if ($conn->query($sql) ==TRUE)
-  {
-    $msg = "New Record created successfully";
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-  }
-  else
-  {
-    $msg = "Error: " . $sql . " " . $conn->error;
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-  }
+    if ($conn->query($sql) ==TRUE)
+    {
+      $msg = "New Record created successfully";
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+    else
+    {
+      $msg = "Error: " . $sql . " " . $conn->error;
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
 
-  $conn->close();
+    $conn->close();
+  }
 
   /*header('Location: ./ViewAllAccounts.php');*/
 }
