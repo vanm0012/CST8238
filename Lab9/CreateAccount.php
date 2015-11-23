@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $conn = new mysqli($host, $username, $password, $database);
   if ($conn->connection_error)
   {
-    $msg = die("Connection Failed: " . $conn->connect_error);
+    $msg = "Connection Failed: " . $conn->connect_error;
     echo "<script type='text/javascript'>alert('$msg');</script>";
   }
 
@@ -42,8 +42,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   if ($conn->query($sql) ==TRUE)
   {
-
+    $msg = "New Record created successfully";
+    echo "<script type='text/javascript'>alert('$msg');</script>";
   }
+  else
+  {
+    $msg = "Error: " . $sql . " " . $conn->error;
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+  }
+
+  $conn->close();
 
   /*header('Location: ./ViewAllAccounts.php');*/
 }
