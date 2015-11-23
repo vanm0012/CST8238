@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   /* DATABASE UPDATE */
   $conn = new mysql_connect($host, $username, $password);
 
-  if (! $conn)
+  if ($conn == FALSE)
   {
     die("Connection Failed: " . mysqli_connect_error());
     echo 'CONNECTION ERROR';
