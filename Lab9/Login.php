@@ -17,7 +17,7 @@ $username = 'vanm0012_Lab9';
 $password = 'vanm0012';
 $database = 'vanm0012_Lab9';
 
-$invalid_login = False;
+$invalid_login = True;
 $valid_login = False;
 
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
