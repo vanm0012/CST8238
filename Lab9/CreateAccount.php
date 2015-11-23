@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
 
   /* DATABASE UPDATE */
-  $conn = new mysqli_connect($host, $username, $password, $database);
+  $conn = new mysqli($host, $username, $password, $database);
+
   if ($conn->connection_error)
   {
     $msg = "Connection Failed: " . $conn->connect_error;
@@ -40,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   $sql = "INSERT INTO persons (first_name, last_name, email_address, telephone_number, social_insurance_number, password) VALUES ('$fname, $lname, $email, $pnum, $snum, $hashed_pass')";
 
-  if ($conn->query($sql) ==TRUE)
+  if ($conn->query($sql) == TRUE)
   {
     $msg = "New Record created successfully";
     echo "<script type='text/javascript'>alert('$msg');</script>";
@@ -53,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   $conn->close();
 
-  header('Location: ./ViewAllAccounts.php');
+ /*header('Location: ./ViewAllAccounts.php');*/
 }
 ?>
 
