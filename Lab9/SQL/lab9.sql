@@ -4,11 +4,11 @@ CREATE DATABASE IF NOT EXISTS vanm0012_Lab9;
 
 CREATE TABLE persons
 (
-  PersionId, INT, Primary Key NOT NULL AUTO_INCREMENT,
-  FirstName, VARCHAR(50) NULL,
-  LastName, VARCHAR(50) NULL,
-  EmailAddress, VARCHAR(255) NULL,
-  TelephoneNumber, VARCHAR(20) NULL,
-  SocialInsuranceNumber, VARCHAR(11) NULL,
-  Password, VARCHAR(60) NULL
+  person_id INT Primary Key NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(50) NULL,
+  last_name VARCHAR(50) NULL,
+  email VARCHAR(255) NULL,
+  telephone VARCHAR(20) NULL,
+  sin VARCHAR(11) NULL,
+  pass_hash VARCHAR(60) NULL
 );
