@@ -99,6 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         /* Submit and Close Form */
         echo '<br>';
         echo '<input class="orange accent-4 white-text" type="submit" value="Login">';
+        echo <'br'>;
         echo '<input class="orange accent-3 white-text" type="button" value="Create Account" onClick="document.location.href="./CreateAccount.php"/>';
 
         echo '</form>';
