@@ -1760,7 +1760,7 @@ input[type="email"]:focus:invalid ~ label
   color: #d50000;
 }
 
-input[type="tel"]:invalid ~ label, input[type="email"]:valid ~ label
+input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
 {
   top: -20px;
   font-size: 14px;
