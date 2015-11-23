@@ -1666,8 +1666,7 @@ ol .upper
   margin-bottom:45px;
 }
 
-input[type="text"], input[type="tel"], input[type="password"],
-input[type="email"]
+input[type="text"], input[type="tel"], input[type="password"]
 {
   padding: 10px;
   display: block;
