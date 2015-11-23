@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         echo '<br>';
         echo '<input class="orange accent-4 white-text" type="submit" value="Submit">';
         echo '</form>';
-        if (!invalid_login)
+        if (invalid_login)
         {
           echo '<span class="red-text">Invalid Email/Password</span>';
         }
