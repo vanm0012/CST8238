@@ -1933,7 +1933,7 @@ input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
 
 .menu ul:hover
 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .menu a
