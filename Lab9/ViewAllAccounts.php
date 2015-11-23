@@ -57,7 +57,7 @@ mysqli_close($conn);
       <div class="center">
         <?php
         echo '<h1>HTML TABLE OF DATABASE</h1>';
-        echo '<table width=100%>';
+        echo '<table border="1" width=100%>';
         echo '<tr>';
         echo '<th>PERSON ID</th>';
         echo '<th>FIRST NAME</th>';
