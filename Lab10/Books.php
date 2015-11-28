@@ -34,7 +34,7 @@ $books->getElementsByTagName('book')
         echo '<th>Publish Date</th>';
         echo '<th>Description</th>';
         echo '</tr>';
-        foreach($books as $book)
+        /*foreach($books as $book)
         {
           echo '<tr>';
           foreach($book->childNodes as $book_info)
@@ -45,7 +45,7 @@ $books->getElementsByTagName('book')
             }
           }
           echo '</tr>';
-        }
+        }*/
         echo '</table>';
         ?>
     </div>
