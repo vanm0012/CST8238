@@ -1667,6 +1667,37 @@ table
   background-color: #fff;
 }
 
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td
+{
+  text-align: left;
+  padding: 16px;
+  vertical-align: top;
+  border-top: 0;
+}
+
+table > thead > tr > th
+{
+  font-weight: 400;
+  color: #757575;
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td
+{
+  border-top: 0;
+}
+
 /****************************************************
 / Input Styles
 /****************************************************/
