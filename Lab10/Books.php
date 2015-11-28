@@ -3,6 +3,11 @@
 session_start();
 include("Header.php");
 include("Footer.php");
+
+$xml = file_get_contents("http://www.rejaul.com/CST8238/Lab10/Books.xml");
+$catalog = new DOMDocument();
+$catalog->loadXML($xml);
+$books = $catalog->getElementsByTagName('book');
 ?>
 
 <html>
@@ -29,16 +34,14 @@ include("Footer.php");
         echo '<th>Publish Date</th>';
         echo '<th>Description</th>';
         echo '</tr>';
-        for($i=0;$i<10;$i++)
+        foreach($books as $book)
         {
-          echo '<tr>';
-          echo "<td>Gambardella, Matthew</td>";
-          echo "<td>XML Developer's Guide</td>";
-          echo "<td>Computer</td>";
-          echo "<td>44.95</td>";
-          echo "<td>2000-10-01</td>";
-          echo "<td>An in-depth look at creating applications with XML.</td>";
-          echo '</tr>';
+          foreach($book->childNodes as $book_info)
+          {
+            echo '<tr>';
+            echo "<td> . $book_info .</td>";
+            echo '</tr>';
+          }
         }
         echo '</table>';
         ?>
