@@ -18,9 +18,9 @@ if ($_SESSION["valid_login"] == False)
 }
 
 $host = 'localhost';
-$username = 'vanm0012_Lab9';
+$username = 'vanmfoxh_vanm001';
 $password = 'vanm0012';
-$database = 'vanm0012_Lab9';
+$database = 'vanmfoxh_vanm0012_Lab9';
 
 /* DATABASE*/
 $conn = mysqli_connect($host, $username, $password, $database);
@@ -56,6 +56,23 @@ mysqli_close($conn);
     <main>
       <div class="center">
         <?php
+        echo '<h1>SAVED SESSION</h1>';
+        echo 'First Name: ' . $_SESSION["fname"];
+        echo '<br>';
+        echo 'Last Name: ' . $_SESSION["lname"];
+        echo '<br>';
+        echo 'Email: ' . $_SESSION["email"];
+        echo '<br>';
+        echo 'Telephone: ' . $_SESSION["pnum"];
+        echo '<br>';
+        echo 'SIN: ' . $_SESSION["snum"];
+        echo '<br>';
+        echo 'Password: ' . $_SESSION["pass"];
+        echo '<br>';
+
+        echo '<br>';
+        echo '<br>';
+
         echo '<h1>HTML TABLE OF DATABASE</h1>';
         echo '<table border="1" width=100%>';
         echo '<tr>';

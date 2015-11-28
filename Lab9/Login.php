@@ -13,9 +13,9 @@ function test_input($data)
 }
 
 $host = 'localhost';
-$username = 'vanm0012_Lab9';
+$username = 'vanmfoxh_vanm001';
 $password = 'vanm0012';
-$database = 'vanm0012_Lab9';
+$database = 'vanmfoxh_vanm0012_Lab9';
 
 $invalid_login = False;
 $_SESSION["valid_login"] = False;
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   mysqli_close($conn);
 
-  if ($valid_login)
+  if ($_SESSION["valid_login"])
   {
     header('Location: ./ViewAllAccounts.php');
   }

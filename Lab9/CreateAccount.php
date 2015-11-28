@@ -13,9 +13,9 @@ function test_input($data)
 }
 
 $host = 'localhost';
-$username = 'vanm0012_Lab9';
+$username = 'vanmfoxh_vanm001';
 $password = 'vanm0012';
-$database = 'vanm0012_Lab9';
+$database = 'vanmfoxh_vanm0012_Lab9';
 
 $_SESSION["fname"] = $_SESSION["lname"] = $_SESSION["pnum"] = $_SESSION["snum"] = $_SESSION["pass"] = $_SESSION["email"] = "";
 
@@ -48,6 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   }
 
   mysqli_close($conn);
+  $_SESSION["valid_login"];
   header('Location: ./ViewAllAccounts.php');
 }
 ?>
