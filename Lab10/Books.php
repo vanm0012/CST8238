@@ -39,7 +39,10 @@ $books->getElementsByTagName('book')
           echo '<tr>';
           foreach($book->childNodes as $book_info)
           {
-            echo "<td>$book_info->nodeValue</td>";
+            if ($book_info->nodeName == "author")
+            {
+              echo "<td>$book_info->nodeValue</td>";
+            }
           }
           echo '</tr>';
         }
