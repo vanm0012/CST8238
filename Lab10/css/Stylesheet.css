@@ -1720,6 +1720,8 @@ table > tbody > tr:hover > td,
 table > tbody > tr:hover > th
 {
   background-color: rgba(0, 0, 0, 0.12);
+  border-right: solid 1px rgba(0, 0, 0, 0.12);
+  border-left: solid 1px rgba(0, 0, 0, 0.12);
 }
 
 /****************************************************
