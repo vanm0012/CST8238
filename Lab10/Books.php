@@ -43,6 +43,26 @@ $books = $catalog->getElementsByTagName('book');
             {
               echo "<td>$book_info->nodeValue</td>";
             }
+            if ($book_info->nodeName == "title")
+            {
+                echo "<td>$book_info->nodeValue</td>";
+            }
+            if ($book_info->nodeName == "genre")
+            {
+                echo "<td>$book_info->nodeValue</td>";
+            }
+            if ($book_info->nodeName == "price")
+            {
+                echo "<td>$book_info->nodeValue</td>";
+            }
+            if ($book_info->nodeName == "")
+            {
+                echo "<td>$book_info->nodeValue</td>";
+            }
+            if ($book_info->nodeName == "")
+            {
+                echo "<td>$book_info->nodeValue</td>";
+            }
           }
           echo '</tr>';
         }
