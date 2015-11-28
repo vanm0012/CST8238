@@ -1685,6 +1685,7 @@ table > thead > tr > th,
 table > thead > tr > td
 {
   border-bottom-width: 2px;
+  color: #616161;
 }
 
 table > thead > tr > th
