@@ -1678,6 +1678,13 @@ table > tfoot > tr > td
   padding: 16px;
   vertical-align: top;
   border-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table > thead > tr > th,
+table > thead > tr > td
+{
+  border-bottom-width: 2px;
 }
 
 table > thead > tr > th
@@ -1696,6 +1703,11 @@ table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td
 {
   border-top: 0;
+}
+
+table > tbody + tbody
+{
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 /****************************************************
