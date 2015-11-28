@@ -7,7 +7,7 @@ include("Footer.php");
 $xml = file_get_contents("http://www.rejaul.com/CST8238/Lab10/Books.xml");
 $catalog = new DOMDocument();
 $catalog->loadXML($xml);
-$books->getElementsByTagName('book')
+$books->getElementsByTagName('book');
 ?>
 
 <html>
