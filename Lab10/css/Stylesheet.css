@@ -1682,9 +1682,7 @@ table > tfoot > tr > td
 }
 
 
-table > thead > tr > th,
-table > tbody > tr > th,
-table > tfoot > tr > th,
+table > tbody > tr > th
 {
   color: #616161;
 }
