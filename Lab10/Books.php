@@ -36,12 +36,12 @@ $books->getElementsByTagName('book')
         echo '</tr>';
         foreach($books as $book)
         {
+          echo '<tr>';
           foreach($book->childNodes as $book_info)
           {
-            echo '<tr>';
-            echo "<td>.$book_info->nodeName.</td>";
-            echo '</tr>';
+            echo "<td>$book_info->nodeValue</td>";
           }
+          echo '</tr>';
         }
         echo '</table>';
         ?>
