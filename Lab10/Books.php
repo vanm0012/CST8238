@@ -36,12 +36,7 @@ $catalog->loadXML($xml);
         foreach($catalog->getElementsByTagName('book') as $book)
         {
           echo '<tr>';
-          echo "<td> . $book->nodeValue . </td>";
-          echo "<td> . $book->getAttribute('title') . </td>";
-          echo "<td> . $book->getAttribute('genre') . </td>";
-          echo "<td> . $book->getAttribute('price') . </td>";
-          echo "<td> . $book->getAttribute('publish_date') . </td>";
-          echo "<td> . $book->getAttribute('descreiption') . </td>";
+          echo "<td>$book->nodeValue</td>";
           echo '</tr>';
         }
         echo '</table>';
