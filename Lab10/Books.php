@@ -55,11 +55,11 @@ $books = $catalog->getElementsByTagName('book');
             {
                 echo "<td>$book_info->nodeValue</td>";
             }
-            if ($book_info->nodeName == "")
+            if ($book_info->nodeName == "publish_date")
             {
                 echo "<td>$book_info->nodeValue</td>";
             }
-            if ($book_info->nodeName == "")
+            if ($book_info->nodeName == "description")
             {
                 echo "<td>$book_info->nodeValue</td>";
             }
