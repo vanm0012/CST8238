@@ -1679,6 +1679,8 @@ table > tfoot > tr > td
   vertical-align: top;
   border-top: 0;
   border-bottom: 1px solid #e0e0e0;
+  border-right: solid 1px rgba(0, 0, 0, 0.12);
+  border-left: solid 1px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -1720,8 +1722,6 @@ table > tbody > tr:hover > td,
 table > tbody > tr:hover > th
 {
   background-color: rgba(0, 0, 0, 0.12);
-  border-right: solid 1px rgba(0, 0, 0, 0.12);
-  border-left: solid 1px rgba(0, 0, 0, 0.12);
 }
 
 /****************************************************
