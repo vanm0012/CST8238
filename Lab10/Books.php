@@ -24,7 +24,7 @@ $books = $catalog->getElementsByTagName('book');
     <main>
       <div class="center">
         <?php
-        echo '<h1>Books</h1>';
+        echo '<h1 align="left" class="grey-text text-darken-2">Books</h1>';
         echo '<table>';
         echo '<tr>';
         echo '<th>Author</th>';
