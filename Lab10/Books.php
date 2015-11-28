@@ -36,7 +36,7 @@ $catalog->loadXML($xml);
         foreach($catalog->getElementsByTagName('book') as $book)
         {
           echo '<tr>';
-          echo "<td>$book->nodeValue</td>";
+          echo "<td> $book->childNodes </td>";
           echo '</tr>';
         }
         echo '</table>';
