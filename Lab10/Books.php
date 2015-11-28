@@ -7,6 +7,7 @@ include("Footer.php");
 $xml = file_get_contents("http://www.rejaul.com/CST8238/Lab10/Books.xml");
 $catalog = new DOMDocument();
 $catalog->loadXML($xml);
+$books->getElementsByTagName('book')
 ?>
 
 <html>
@@ -33,11 +34,14 @@ $catalog->loadXML($xml);
         echo '<th>Publish Date</th>';
         echo '<th>Description</th>';
         echo '</tr>';
-        foreach($catalog as $book)
+        foreach($books as $book)
         {
-          echo '<tr>';
-          echo "<td> $book->nodename </td>";
-          echo '</tr>';
+          foreach($book->childNodes as $book_info)
+          {
+            echo '<tr>';
+            echo "<td> $book_info->nodeName </td>";
+            echo '</tr>';
+          }
         }
         echo '</table>';
         ?>
