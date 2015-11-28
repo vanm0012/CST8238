@@ -33,7 +33,7 @@ $catalog->loadXML($xml);
         echo '<th>Publish Date</th>';
         echo '<th>Description</th>';
         echo '</tr>';
-        foreach($catalog->getElementsByTagName('book') as $book)
+        foreach($catalog as $book)
         {
           echo '<tr>';
           echo "<td> $book->nodename </td>";
