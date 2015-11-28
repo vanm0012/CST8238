@@ -1710,6 +1710,12 @@ table > tbody + tbody
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+table > tbody > tr:hover > td,
+table > tbody > tr:hover > th
+{
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
 /****************************************************
 / Input Styles
 /****************************************************/
