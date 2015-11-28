@@ -36,12 +36,14 @@ $books = $catalog->getElementsByTagName('book');
         echo '</tr>';
         foreach($books as $book)
         {
-          foreach($book->childNodes as $book_info)
-          {
-            echo '<tr>';
-            echo "<td> . $book_info .</td>";
-            echo '</tr>';
-          }
+          echo '<tr>';
+          echo "<td> . $book->getElementsByTagName('author') . </td>";
+          echo "<td> . $book->getElementsByTagName('title') . </td>";
+          echo "<td> . $book->getElementsByTagName('genre') . </td>";
+          echo "<td> . $book->getElementsByTagName('price') . </td>";
+          echo "<td> . $book->getElementsByTagName('publish_date') . </td>";
+          echo "<td> . $book->getElementsByTagName('descreiption') . </td>";
+          echo '</tr>';
         }
         echo '</table>';
         ?>
