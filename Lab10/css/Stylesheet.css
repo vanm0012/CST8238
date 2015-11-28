@@ -1681,11 +1681,18 @@ table > tfoot > tr > td
   border-bottom: 1px solid #e0e0e0;
 }
 
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+{
+  color: #616161;
+}
+
 table > thead > tr > th,
 table > thead > tr > td
 {
   border-bottom-width: 2px;
-  color: #616161;
 }
 
 table > thead > tr > th
