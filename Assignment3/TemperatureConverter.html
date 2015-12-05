@@ -8,7 +8,7 @@
   <link href="css/Stylesheet.css" rel="stylesheet" type="text/css">
   <link href="css/octicons.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 	<script>
 		/*
@@ -27,8 +27,25 @@
 		*/
     function convert_temperature()
     {
-      var old_temp =  prompt("Enter a Value","temperature");
-      alert(old_temp);
+      var temp_unit = "C";
+
+      $("#temp_dialog").dialog(
+        {
+        dialogClass: "no-close",
+        buttons:
+        {
+          "Celsius": function()
+          {
+            temp_unit = "C";
+          }
+          "Fahrenheit": function()
+          {
+            temp_unit = "F";
+          }
+        }
+      });
+
+      alert(temp_unit);
     }
 	</script>
 </head>
