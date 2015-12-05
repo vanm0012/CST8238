@@ -61,8 +61,8 @@
     {
       $("#temp_dialog").dialog('close');
 
-      var msg = value + unit + "-->";
       var value = prompt("Enter the temperature: ", "0");
+      var msg = value + unit + "-->";
       var converted = 0;
 
       if (isNaN(value))
