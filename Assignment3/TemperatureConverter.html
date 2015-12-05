@@ -27,9 +27,11 @@
 		temperature that they entered, and the converted temperature.
 		The function should be called when the appropriate button below is pressed.
 		*/
-    function convert_temperature()
+    function getUnit()
     {
       var temp_unit = "C";
+      var temp_value = "0"
+
 
       $("#temp_dialog").dialog(
         {
@@ -39,15 +41,22 @@
           "Celsius": function()
           {
             temp_unit = "C";
+            temp_value = prompt("Enter the temperature: ", "0");
+            convertTemperature(temp_unit, temp_value)
           },
           "Fahrenheit": function()
           {
             temp_unit = "F";
+            temp_value = prompt("Enter the temperature: ", "0");
+            convertTemperature(temp_unit, temp_value)
           }
         }
       });
+    }
 
-      alert(temp_unit);
+    function convertTemperature(unit, value)
+    {
+      alert(value + " " + unit);
     }
 	</script>
 
@@ -72,7 +81,7 @@
         <th>Temperature conversion</td>
     </tr>
     <tr>
-	<td><input class="indigo accent-4 white-text" type="button" name="btnConvert" id="btnConvert" value="Convert!" onclick="convert_temperature()"></td>
+	<td><input class="indigo accent-4 white-text" type="button" name="btnConvert" id="btnConvert" value="Convert!" onclick="getUnit()"></td>
 </tr>
 </table>
 </div>
