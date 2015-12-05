@@ -37,8 +37,6 @@
     function getUnit()
     {
       var temp_unit = "C";
-      var temp_value = "0"
-
 
       $("#temp_dialog").dialog(
         {
@@ -48,23 +46,24 @@
           "Celsius": function()
           {
             temp_unit = "C";
-            temp_value = prompt("Enter the temperature: ", "0");
-            convertTemperature(temp_unit, temp_value)
+            convertTemperature(temp_unit)
           },
           "Fahrenheit": function()
           {
             temp_unit = "F";
-            temp_value = prompt("Enter the temperature: ", "0");
-            convertTemperature(temp_unit, temp_value)
+            convertTemperature(temp_unit)
           }
         }
       });
     }
 
-    function convertTemperature(unit, value)
+    function convertTemperature(unit)
     {
-      alert(value + " " + unit);
+      var temp_value = prompt("Enter the temperature: ", "0");
+
       $("#temp_dialog").dialog('close');
+      alert(value + " " + unit);
+
     }
 	</script>
 
