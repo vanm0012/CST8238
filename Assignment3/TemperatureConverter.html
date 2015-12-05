@@ -61,11 +61,25 @@
     {
       $("#temp_dialog").dialog('close');
 
+      var msg = value + unit + "-->";
       var value = prompt("Enter the temperature: ", "0");
+      var converted = 0;
 
-      var value = parseInt(value);
+      if isNaN(value)
+      {
+        msg = "Temperature given is not a valid number!";
+      }
+      else if (unit == "F")
+      {
+        msg.concat(converted + "C");
+      }
+      else
+      {
+        msg.concat(converted + "F");
+      }
 
-      alert(value + " " + unit);
+      msg = value + unit + "-->";
+      alert(msg);
 
     }
 	</script>
