@@ -49,18 +49,18 @@
           {
             temp_unit = "C";
             temp_value = prompt("Enter the temperature: ", "0");
-            $("#temp_dialog").dialog('close');
             convertTemperature(temp_unit, temp_value)
           },
           "Fahrenheit": function()
           {
             temp_unit = "F";
             temp_value = prompt("Enter the temperature: ", "0");
-            $("#temp_dialog").dialog('close');
             convertTemperature(temp_unit, temp_value)
           }
         }
       });
+
+      $("#temp_dialog").dialog('close');
     }
 
     function convertTemperature(unit, value)
