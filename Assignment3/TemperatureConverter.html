@@ -59,9 +59,10 @@
 
     function convertTemperature(unit)
     {
-      var temp_value = prompt("Enter the temperature: ", "0");
-
       $("#temp_dialog").dialog('close');
+      
+      var value = prompt("Enter the temperature: ", "0");
+
       alert(value + " " + unit);
 
     }
