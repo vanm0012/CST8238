@@ -71,10 +71,12 @@
       }
       else if (unit == "F")
       {
+        converted = value / 1.8 - 32;
         msg = msg + converted + "C";
       }
       else if (unit == "C")
       {
+        converted = value * 1.8 + 32;
         msg = msg + converted + "C";
       }
 
