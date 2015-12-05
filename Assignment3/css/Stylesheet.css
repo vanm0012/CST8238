@@ -1763,7 +1763,8 @@ input[type="password"]:valid, input[type="email"]:valid
 
 /* Submit Buttom Style*/
 
-input[type=submit], button
+input[type=submit], button,
+input[type=button]
 {
   cursor: pointer;
   color: inherit;
@@ -1777,7 +1778,8 @@ input[type=submit], button
   border-radius: 2px;
 }
 
-input[type=submit]:hover, button:hover
+input[type=submit]:hover, button:hover,
+input[type=button]:hover
 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
@@ -1948,7 +1950,7 @@ input[type="tel"]:invalid ~ label, input[type="email"]:invalid ~ label
 {
   list-style-type: none;
 }
-
+button
 .sidebar li
 {
   margin-bottom: 20px;
