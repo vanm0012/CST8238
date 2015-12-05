@@ -60,8 +60,10 @@
     function convertTemperature(unit)
     {
       $("#temp_dialog").dialog('close');
-      
+
       var value = prompt("Enter the temperature: ", "0");
+
+      var value = parseInt(value);
 
       alert(value + " " + unit);
 
