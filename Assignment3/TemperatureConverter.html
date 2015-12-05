@@ -25,7 +25,11 @@
 		temperature that they entered, and the converted temperature.
 		The function should be called when the appropriate button below is pressed.
 		*/
-
+    function convert_tempature()
+    {
+      var old_temp =  prompt("Enter a Value","0");
+      alert(old_temp);
+    }
 	</script>
 </head>
 
@@ -47,7 +51,7 @@
         <th>Temperature conversion</td>
     </tr>
     <tr>
-	<td><input class="indigo accent-4 white-text" type="button" name="btnConvert" id="btnConvert" value="Convert!"></td>
+	<td><input class="indigo accent-4 white-text" type="button" name="btnConvert" id="btnConvert" value="Convert!" onclick="convert_tempature"></td>
 </tr>
 </table>
 </div>
