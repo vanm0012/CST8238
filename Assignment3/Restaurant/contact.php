@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $username = test_input($_POST["username"]);
   $referral = test_input($_POST["referral"]);
 
-  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username', $referral)";
+  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username', '$referral')";
 
   $conn->query($sql);
 }
