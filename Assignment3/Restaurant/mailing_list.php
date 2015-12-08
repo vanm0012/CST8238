@@ -17,6 +17,7 @@
                   <!-- Display content in table -->
                   <?php
                   if (($result = $conn->query("SELECT * FROM mailing_list")) == TRUE)
+                  echo '<!-- TABLE QUERIED-->';
                   {
                     if ($conn->num_rows($result) > 0)
                     {
