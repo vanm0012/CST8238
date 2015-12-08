@@ -19,12 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $emailAddress = test_input(_POST["emailAddress"]);
   $username = test_input(_POST["username"]);
 
-  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer)
-  VALUES ('customerfName', 'customerlName', '$phoneNumber', '$emailAddress', '$username')"
+  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username')";
 
-  if ($conn->query($sql) == FALSE)
+  if ($result = $conn->query($sql))
   {
-    die("Error: " . $sql . "<br>" . mysqli_error($conn));
+    die("Error: " . $sql . "<br>" . $conn->connect_error);
   }
 }
 ?>
