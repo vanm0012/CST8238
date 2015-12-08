@@ -13,11 +13,11 @@ $customerfName = $customerlName = $phoneNumber = $emailAddress = $username = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-  $customerfName = test_input(_POST["customerfName"]);
-  $customerlName = test_input(_POST["customerlName"]);
-  $phoneNumber = test_input(_POST["phoneNumber"]);
-  $emailAddress = test_input(_POST["emailAddress"]);
-  $username = test_input(_POST["username"]);
+  $customerfName = test_input($_POST["customerfName"]);
+  $customerlName = test_input($_POST["customerlName"]);
+  $phoneNumber = test_input($_POST["phoneNumber"]);
+  $emailAddress = test_input($_POST["emailAddress"]);
+  $username = test_input($_POST["username"]);
 
   $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username')";
 
