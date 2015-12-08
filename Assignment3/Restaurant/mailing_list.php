@@ -24,7 +24,7 @@
                       while ($row = $result->fetch_assoc())
                       {
                         echo '<tr>';
-                        echo '<td>' . $row['first_name'] . $row['last_name'] .  '/td';
+                        echo '<td>' . $row['first_name'] . ' ' . $row['last_name'] .  '</td>';
                         echo '<td>' . $row['email_address'] . '/td';
                         echo '<td>' . $row['username'] . '/td';
                         echo '<td>' . $row['phone_number'] . '/td';
