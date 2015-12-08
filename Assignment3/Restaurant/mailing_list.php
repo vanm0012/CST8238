@@ -19,9 +19,9 @@
                   if (($result = $conn->query("SELECT * FROM mailing_list")) == TRUE)
                   echo '<!-- TABLE QUERIED-->';
                   {
-                    if ($conn->num_rows($result) > 0)
+                    if ($conn->num_rows > 0)
                     {
-                      while ($row = $conn->fetch_assoc($result))
+                      while ($row = $conn->fetch_assoc())
                       {
                         echo '<tr>';
                         echo '<td>' . $row['first_name'] . $row['last_name'] .  '/td';
