@@ -5,7 +5,7 @@
             <div id="content" class="clearfix">
                 <p>&nbsp;</p>
                 <h1>Mailing List</h1>
-                <table border="1" width=100%>
+                <table border="1" width=80%>
 
                   <tr>
                     <th>Full Name</th>
