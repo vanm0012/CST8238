@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $emailAddress = test_input($_POST["emailAddress"]);
   $username = test_input($_POST["username"]);
 
+  echo '<!-- ' . $_POST["username"] . '-->';
+
   $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username')";
 
   if ($result = $conn->query($sql))
