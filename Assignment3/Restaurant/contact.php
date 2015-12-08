@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username', $referral)";
 
-  if ($result = $conn->query($sql))
+  if (($result = $conn->query($sql)) == FALSE)
   {
     die("Error: " . $sql . "<br>" . $conn->connect_error);
   }
