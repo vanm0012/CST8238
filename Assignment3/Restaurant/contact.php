@@ -9,7 +9,6 @@ function test_input($data)
   return $data;
 }
 
-$customerfName = $customerlName = $phoneNumber = $emailAddress = $username = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -18,10 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   $phoneNumber = test_input($_POST["phoneNumber"]);
   $emailAddress = test_input($_POST["emailAddress"]);
   $username = test_input($_POST["username"]);
+  $referrer = test_input($_POST["referrer"]);
 
   echo '<!-- ' . $_POST["username"] . '-->';
 
-  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username')";
+  $sql = "INSERT INTO mailing_list (first_name, last_name, phone_number, email_address, username, referrer) VALUES ('$customerfName', '$customerlName', '$phoneNumber', '$emailAddress', '$username', $referrer)";
 
   if ($result = $conn->query($sql))
   {
