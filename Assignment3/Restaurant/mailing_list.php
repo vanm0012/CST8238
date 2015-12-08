@@ -16,12 +16,12 @@
 
                   <!-- Display content in table -->
                   <?php
-                  if (($result = $conn->query("SELECT * FROM mailing_list")) == TRUE)
+                  if ($result = $conn->query("SELECT * FROM mailing_list"))
                   echo '<!-- TABLE QUERIED-->';
                   {
-                    if ($conn->num_rows > 0)
+                    if ($result->num_rows > 0)
                     {
-                      while ($row = $conn->fetch_assoc())
+                      while ($row = $result->fetch_assoc())
                       {
                         echo '<tr>';
                         echo '<td>' . $row['first_name'] . $row['last_name'] .  '/td';
